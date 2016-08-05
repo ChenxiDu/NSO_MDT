@@ -1,0 +1,11 @@
+<ivy-module version="1.0">
+    <info organisation="cisco" module="package"/>
+    <dependencies>
+        <dependency org="org.slf4j" name="slf4j-simple" rev="1.7.21"/>
+        <!-- https://mvnrepository.com/artifact/com.github.docker-java/docker-java -->
+        <dependency org="com.github.docker-java" name="docker-java" rev="3.0.0"/>
+        <!-- https://mvnrepository.com/artifact/com.x5dev/chunk-templates -->
+		    <dependency org="com.x5dev" name="chunk-templates" rev="2.2"/>
+    </dependencies>
+</ivy-module>
+

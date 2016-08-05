@@ -1,0 +1,7 @@
+<INFO> 5-Aug-2016::01:14:15.740 ubuntu confd[27951]: confd embedded apps in early_phase0: []
+<INFO> 5-Aug-2016::01:14:15.867 ubuntu confd[27951]: confd embedded apps in phase0: []
+<INFO> 5-Aug-2016::01:14:16.000 ubuntu confd[27951]: devel-cdb init files found in ./cdb: aaa_init.xml
+<INFO> 5-Aug-2016::01:14:16.039 ubuntu confd[27951]: confd embedded apps in phase1: []
+<INFO> 5-Aug-2016::01:14:16.070 ubuntu confd[27951]: confd embedded apps in phase2: []
+<INFO> 5-Aug-2016::01:14:21.036 ubuntu confd[27951]: devel-cdb Initiating CDB journal compaction
+<INFO> 5-Aug-2016::01:14:21.038 ubuntu confd[27951]: devel-cdb Compacted CDB journal file: 1 ms (87 nodes in memory, disk size 1.43 KiB -> 1.39 KiB)

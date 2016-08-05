@@ -1,0 +1,45 @@
+
+## device xr-0
+devices[0]=xr-0
+prefix[0]=xr-
+netconf_ssh_port[0]=12022
+netconf_tcp_port[0]=13022
+snmp_port[0]=11022
+cli_ssh_port[0]=10022
+ipc_port[0]=5010
+devicedirs[0]=xr-/xr-0
+packagedirs[0]=../packages/mdt
+# This absolute path is not used by any of the ncs- tools
+abspackagedirs[0]=/root/myproject/packages/mdt
+#######
+
+
+## device xr-1
+devices[1]=xr-1
+prefix[1]=xr-
+netconf_ssh_port[1]=12023
+netconf_tcp_port[1]=13023
+snmp_port[1]=11023
+cli_ssh_port[1]=10023
+ipc_port[1]=5011
+devicedirs[1]=xr-/xr-1
+packagedirs[1]=../packages/mdt
+# This absolute path is not used by any of the ncs- tools
+abspackagedirs[1]=/root/myproject/packages/mdt
+#######
+
+
+## device xr-2
+devices[2]=xr-2
+prefix[2]=xr-
+netconf_ssh_port[2]=12024
+netconf_tcp_port[2]=13024
+snmp_port[2]=11024
+cli_ssh_port[2]=10024
+ipc_port[2]=5012
+devicedirs[2]=xr-/xr-2
+packagedirs[2]=../packages/mdt
+# This absolute path is not used by any of the ncs- tools
+abspackagedirs[2]=/root/myproject/packages/mdt
+#######
+

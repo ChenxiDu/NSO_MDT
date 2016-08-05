@@ -1,0 +1,22 @@
+
+This is a netsim project directory. The directory has been generated
+through the invocation of
+
+/root/nso-4.1.1/bin/ncs-netsim create-network packages/mdt/ 3 xr-
+
+This netsim project manages a set of emulated devices. Each device
+is emulated by ConfD. The devices are:
+
+ncs-netsim list for  /root/myproject/netsim
+
+name=xr-0 netconf=12022 snmp=11022 ipc=5010 cli=10022 dir=/root/myproject/netsim/xr-/xr-0 
+name=xr-1 netconf=12023 snmp=11023 ipc=5011 cli=10023 dir=/root/myproject/netsim/xr-/xr-1 
+name=xr-2 netconf=12024 snmp=11024 ipc=5012 cli=10024 dir=/root/myproject/netsim/xr-/xr-2 
+
+Run ncs-netsim help for available commands to control this
+emulated network
+
+There exists directories for each device below here, the logs
+as well as start/stop/cli/status scripts for each device reside in
+each corresponding directory
+

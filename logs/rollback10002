@@ -1,0 +1,16 @@
+# Created by: system
+# Date: 2016-08-05 01:22:55
+# Via: system
+# Type: delta
+# Label: 
+# Comment: 
+# No: 10002
+
+ncs:devices {
+    delete:
+    ncs:device xr-0;
+    delete:
+    ncs:device xr-1;
+    delete:
+    ncs:device xr-2;
+}

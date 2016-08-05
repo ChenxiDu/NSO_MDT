@@ -1,0 +1,71 @@
+<config-template xmlns="http://tail-f.com/ns/config/1.0">
+  <devices xmlns="http://tail-f.com/ns/ncs">
+    <device tags="nocreate" >
+      <name>{$DEVICE}</name>
+        <config tag="merge">
+        <telemetry-model-driven xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-telemetry-model-driven-cfg">
+          <sensor-groups>
+            <sensor-group tags="merge">
+              <sensor-group-identifier>{$SENSOR_GROUP_ID}</sensor-group-identifier>
+              <sensor-paths>
+                <sensor-path tags="merge">
+                  <telemetry-sensor-path>{$SENSOR_PATH}</telemetry-sensor-path>
+                </sensor-path>
+              </sensor-paths>
+              <enable when="{$ENABLE='true'}"/>
+            </sensor-group>
+          </sensor-groups>
+          <subscriptions>
+            <subscription tags="merge">
+              <subscription-identifier>{$SUBSCRIPTION_ID}</subscription-identifier>
+              <!-- <source-address>
+                <address-family>{$DEVICE_ADD_FAM}</address-family>
+                <ip-address>{$DEVICE_IPV4}</ip-address>
+                <ipv6-address>{$DEVICE_IPV6}</ipv6-address>
+              </source-address> -->
+              <sensor-profiles>
+                <sensor-profile tags="merge">
+                  <sensorgroupid>{$SENSOR_GROUP_ID}</sensorgroupid>
+                  <sample-interval>{$SENSOR_SAMPLE_INTERVAL}</sample-interval>
+                  <heartbeat-interval>{$SENSOR_HEARTBEAT_INTERVAL}</heartbeat-interval>
+                  <supress-redundant when="{$SENSOR_SUPRESS_REDUNDANT='true'}"/>
+                </sensor-profile>
+              </sensor-profiles>
+              <destination-profiles>
+                <destination-profile tags="merge">
+                  <destination-id>{$DESTINATION_ID}</destination-id>
+                  <enable when="{$ENABLE='true'}"/>
+                </destination-profile>
+              </destination-profiles>
+              <source-qos-marking>{$SOURCE_QOS_MARKING}</source-qos-marking>
+            </subscription>
+          </subscriptions>
+          <destination-groups>
+            <destination-group tags="merge">
+              <destination-id>{$DESTINATION_ID}</destination-id>
+              <destinations>
+                <destination tags="merge">
+                  <address-family>{$DESTINATION_ADD_FAM}</address-family>
+                  <ipv4 tags="merge" when="{$DESTINATION_ADD_FAM='ipv4'}">
+                    <ipv4-address>{$DESTINATION_ADD}</ipv4-address>
+                    <destination-port>{$DESTINATION_PORT}</destination-port>
+                    <encoding>{$DESTINATION_ENCODE}</encoding>
+                    <protocol>{$DESTINATION_PROTO}</protocol>
+                  </ipv4>
+                  <ipv6 tags="merge" when="{$DESTINATION_ADD_FAM='ipv6'}">
+                    <ipv6-address>{$DESTINATION_ADD}</ipv6-address>
+                    <destination-port>{$DESTINATION_PORT}</destination-port>
+                    <encoding>{$DESTINATION_ENCODE}</encoding>
+                    <protocol>{$DESTINATION_PROTO}</protocol>
+                  </ipv6>
+                </destination>
+              </destinations>
+            </destination-group>
+          </destination-groups>
+          <enable when="{$ENABLE='true'}"/>
+        </telemetry-model-driven>
+        </config>
+    </device>
+  </devices>
+</config-template>
+

@@ -1,0 +1,15 @@
+<INFO> 5-Aug-2016::01:23:02.622 ubuntu confd[27991]: netconf id=11 new ssh session for user "admin" from 127.0.0.1
+<INFO> 5-Aug-2016::01:23:02.650 ubuntu confd[27991]: netconf id=11 got rpc: {urn:ietf:params:xml:ns:netconf:base:1.0}get attrs: message-id="1"
+<INFO> 5-Aug-2016::01:23:02.654 ubuntu confd[27991]: netconf id=11 get attrs: message-id="1"
+<INFO> 5-Aug-2016::01:23:02.659 ubuntu confd[27991]: netconf id=11 sending rpc-reply, attrs: message-id="1"
+<INFO> 5-Aug-2016::01:23:17.070 ubuntu confd[27991]: netconf id=11 got rpc: {urn:ietf:params:xml:ns:netconf:base:1.0}get attrs: message-id="2"
+<INFO> 5-Aug-2016::01:23:17.071 ubuntu confd[27991]: netconf id=11 get attrs: message-id="2"
+<INFO> 5-Aug-2016::01:23:17.072 ubuntu confd[27991]: netconf id=11 sending rpc-reply, attrs: message-id="2"
+<INFO> 5-Aug-2016::01:23:17.075 ubuntu confd[27991]: netconf id=11 got rpc: {urn:ietf:params:xml:ns:netconf:base:1.0}get attrs: message-id="3"
+<INFO> 5-Aug-2016::01:23:17.075 ubuntu confd[27991]: netconf id=11 get attrs: message-id="3"
+<INFO> 5-Aug-2016::01:23:17.075 ubuntu confd[27991]: netconf id=11 sending rpc-reply, attrs: message-id="3"
+<INFO> 5-Aug-2016::01:23:17.077 ubuntu confd[27991]: netconf id=11 got rpc: {urn:ietf:params:xml:ns:netconf:base:1.0}get attrs: message-id="4"
+<INFO> 5-Aug-2016::01:23:17.077 ubuntu confd[27991]: netconf id=11 get attrs: message-id="4"
+<INFO> 5-Aug-2016::01:23:17.078 ubuntu confd[27991]: netconf id=11 sending rpc-reply, attrs: message-id="4"
+<INFO> 5-Aug-2016::02:02:34.892 ubuntu confd[27991]: netconf id=11 close-session attrs: message-id="5"
+<INFO> 5-Aug-2016::02:02:34.905 ubuntu confd[27991]: netconf id=11 ssh transport closed

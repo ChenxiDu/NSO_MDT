@@ -1,0 +1,6 @@
+<INFO> 5-Aug-2016::01:23:02.442 ubuntu confd[27951]: audit user: admin/0 logged in over ssh from 127.0.0.1 with authmeth:password
+<INFO> 5-Aug-2016::01:23:02.444 ubuntu confd[27951]: audit user: admin/11 assigned to groups: admin
+<INFO> 5-Aug-2016::02:04:34.859 ubuntu confd[27951]: audit user: admin/0 Logged out ssh <local> user
+<INFO> 5-Aug-2016::02:23:39.684 ubuntu confd[27951]: audit user: admin/0 logged in over ssh from 127.0.0.1 with authmeth:password
+<INFO> 5-Aug-2016::02:23:39.694 ubuntu confd[27951]: audit user: admin/12 assigned to groups: admin
+<INFO> 5-Aug-2016::02:26:11.214 ubuntu confd[27951]: audit user: admin/0 Logged out ssh <local> user

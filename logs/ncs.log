@@ -1,0 +1,171 @@
+<DEBUG> 5-Aug-2016::01:14:20.410 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-webui.fxs
+<DEBUG> 5-Aug-2016::01:14:20.411 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-ned.fxs
+<DEBUG> 5-Aug-2016::01:14:20.411 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/IANA-ITU-ALARM-TC-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.411 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/ITU-ALARM-TC-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.412 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-TC-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.412 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-yang-types.fxs
+<DEBUG> 5-Aug-2016::01:14:20.412 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-FRAMEWORK-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.413 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/iana-crypt-hash.fxs
+<DEBUG> 5-Aug-2016::01:14:20.413 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-inet-types.fxs
+<DEBUG> 5-Aug-2016::01:14:20.413 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-netconf-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:20.414 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-common-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:20.415 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-netconf-acm.fxs
+<DEBUG> 5-Aug-2016::01:14:20.415 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMPv2-TC.fxs
+<DEBUG> 5-Aug-2016::01:14:20.416 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs.fxs
+<DEBUG> 5-Aug-2016::01:14:20.427 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-USER-BASED-SM-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.428 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-TARGET-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.429 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-yang-smiv2.fxs
+<DEBUG> 5-Aug-2016::01:14:20.429 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-netmod-netconf.fxs
+<DEBUG> 5-Aug-2016::01:14:20.430 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/snmp.fxs
+<DEBUG> 5-Aug-2016::01:14:20.432 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/encryption-usm.fxs
+<DEBUG> 5-Aug-2016::01:14:20.432 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-netconf-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:20.433 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:20.435 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-configuration-policy.fxs
+<DEBUG> 5-Aug-2016::01:14:20.435 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-acm.fxs
+<DEBUG> 5-Aug-2016::01:14:20.436 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-webui.fxs
+<DEBUG> 5-Aug-2016::01:14:20.437 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/tailf-ncs-snmp.fxs
+<DEBUG> 5-Aug-2016::01:14:20.438 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-event-forwarding.fxs
+<DEBUG> 5-Aug-2016::01:14:20.438 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-alarms.fxs
+<DEBUG> 5-Aug-2016::01:14:20.440 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TRANSPORT-ADDRESS-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.441 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TAILF-TOP-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.441 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.442 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMPv2-SMI.fxs
+<DEBUG> 5-Aug-2016::01:14:20.442 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMPv2-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.443 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-VIEW-BASED-ACM-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.443 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-NOTIFICATION-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.444 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-MPD-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.444 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-COMMUNITY-MIB.fxs
+<DEBUG> 5-Aug-2016::01:14:20.445 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/IPV6-TC.fxs
+<DEBUG> 5-Aug-2016::01:14:20.445 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-aaa.fxs
+<DEBUG> 5-Aug-2016::01:14:20.446 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/subtele/load-dir/subtele.fxs
+<DEBUG> 5-Aug-2016::01:14:20.448 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/mdt/load-dir/mdt.fxs
+<DEBUG> 5-Aug-2016::01:14:20.460 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/ncs.ccl
+<DEBUG> 5-Aug-2016::01:14:20.472 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/scripts/command/device_save.sh
+<INFO> 5-Aug-2016::01:14:20.527 ubuntu ncs[28012]: - Starting to listen for Internal IPC on 127.0.0.1:4569
+<INFO> 5-Aug-2016::01:14:20.728 ubuntu ncs[28012]: - CDB load: processing file: /root/nso-4.1.1/var/ncs/cdb/aaa_init.xml
+<INFO> 5-Aug-2016::01:14:20.760 ubuntu ncs[28012]: - CDB load: processing file: /root/nso-4.1.1/var/ncs/cdb/ncs_defaults.xml
+<INFO> 5-Aug-2016::01:14:20.768 ubuntu ncs[28012]: - CDB load: processing file: /root/nso-4.1.1/var/ncs/cdb/tailf-ncs-alarms_init.xml
+<INFO> 5-Aug-2016::01:14:20.932 ubuntu ncs[28012]: - Starting the NCS Java VM
+<DEBUG> 5-Aug-2016::01:14:21.108 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/snmp_init.xml
+<DEBUG> 5-Aug-2016::01:14:21.497 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/subtele/templates/subtele.xml
+<INFO> 5-Aug-2016::01:14:21.507 ubuntu ncs[28012]: - Starting to listen for NETCONF SSH on 0.0.0.0:2022
+<INFO> 5-Aug-2016::01:14:21.560 ubuntu ncs[28012]: - Starting to listen for CLI SSH on 0.0.0.0:2024
+<INFO> 5-Aug-2016::01:14:21.638 ubuntu ncs[28012]: - Starting to listen for WebUI TCP on 0.0.0.0:8080
+<DEBUG> 5-Aug-2016::01:14:21.736 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMPv2-MIB
+<DEBUG> 5-Aug-2016::01:14:21.741 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-FRAMEWORK-MIB
+<DEBUG> 5-Aug-2016::01:14:21.741 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-MPD-MIB
+<INFO> 5-Aug-2016::01:14:21.867 ubuntu ncs[28012]: - Starting to listen for SNMP UDP on 0.0.0.0:4000
+<DEBUG> 5-Aug-2016::01:14:21.896 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/IANA-ITU-ALARM-TC-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.900 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/ITU-ALARM-TC-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.906 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.913 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-TC-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.917 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/TAILF-TOP-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.927 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-COMMUNITY-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.944 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-TARGET-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.955 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-NOTIFICATION-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.967 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-USER-BASED-SM-MIB.bin
+<DEBUG> 5-Aug-2016::01:14:21.972 ubuntu ncs[28012]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-VIEW-BASED-ACM-MIB.bin
+<INFO> 5-Aug-2016::01:14:22.751 ubuntu ncs[28012]: - NCS started vsn: 4.1.1
+<DEBUG> 5-Aug-2016::01:14:33.647 ubuntu ncs[28012]: - Loading file ./packages/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:14:33.649 ubuntu ncs[28012]: - Loading file ./packages/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:14:33.671 ubuntu ncs[28012]: - Copying NCS package from ./packages/subtele to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::01:14:33.673 ubuntu ncs[28012]: - Copying NCS package from ./packages/mdt to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::01:14:33.679 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:14:33.680 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:14:33.681 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/scripts/command/device_save.sh
+<DEBUG> 5-Aug-2016::01:14:33.714 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/subtele/templates/subtele.xml
+<DEBUG> 5-Aug-2016::01:17:30.784 ubuntu ncs[28012]: - Loading file ./packages/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:17:30.787 ubuntu ncs[28012]: - Loading file ./packages/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:17:30.799 ubuntu ncs[28012]: - Copying NCS package from ./packages/subtele to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::01:17:30.887 ubuntu ncs[28012]: - Copying NCS package from ./packages/mdt to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::01:17:30.895 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:17:30.901 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:17:30.933 ubuntu ncs[28012]: - Loading file /root/nso-4.1.1/scripts/command/device_save.sh
+<DEBUG> 5-Aug-2016::01:17:30.967 ubuntu ncs[28012]: - Loading file ./state/packages-in-use/1/subtele/templates/subtele.xml
+<INFO> 5-Aug-2016::01:20:27.598 ubuntu ncs[28012]: - NCS stopping (ncs --stop called by root in /root/myproject)
+<INFO> 5-Aug-2016::01:20:27.980 ubuntu ncs[28012]: - The NCS Java VM terminated
+<INFO> 5-Aug-2016::01:20:29.005 ubuntu ncs[28012]: - Stopping to listen for NETCONF SSH on 0.0.0.0:2022
+<DEBUG> 5-Aug-2016::01:20:38.738 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-webui.fxs
+<DEBUG> 5-Aug-2016::01:20:38.739 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-ned.fxs
+<DEBUG> 5-Aug-2016::01:20:38.739 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/IANA-ITU-ALARM-TC-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.740 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/ITU-ALARM-TC-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.740 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-TC-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.741 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-yang-types.fxs
+<DEBUG> 5-Aug-2016::01:20:38.741 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-FRAMEWORK-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.742 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/iana-crypt-hash.fxs
+<DEBUG> 5-Aug-2016::01:20:38.742 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-inet-types.fxs
+<DEBUG> 5-Aug-2016::01:20:38.742 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-netconf-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:20:38.743 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-common-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:20:38.744 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-netconf-acm.fxs
+<DEBUG> 5-Aug-2016::01:20:38.744 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMPv2-TC.fxs
+<DEBUG> 5-Aug-2016::01:20:38.745 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs.fxs
+<DEBUG> 5-Aug-2016::01:20:38.756 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-USER-BASED-SM-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.757 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-TARGET-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.758 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/ietf-yang-smiv2.fxs
+<DEBUG> 5-Aug-2016::01:20:38.758 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-netmod-netconf.fxs
+<DEBUG> 5-Aug-2016::01:20:38.759 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/snmp.fxs
+<DEBUG> 5-Aug-2016::01:20:38.761 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/encryption-usm.fxs
+<DEBUG> 5-Aug-2016::01:20:38.761 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-netconf-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:20:38.762 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:20:38.764 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-configuration-policy.fxs
+<DEBUG> 5-Aug-2016::01:20:38.764 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-acm.fxs
+<DEBUG> 5-Aug-2016::01:20:38.766 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-webui.fxs
+<DEBUG> 5-Aug-2016::01:20:38.767 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/tailf-ncs-snmp.fxs
+<DEBUG> 5-Aug-2016::01:20:38.768 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-event-forwarding.fxs
+<DEBUG> 5-Aug-2016::01:20:38.768 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-ncs-alarms.fxs
+<DEBUG> 5-Aug-2016::01:20:38.770 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TRANSPORT-ADDRESS-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.770 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TAILF-TOP-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.770 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.771 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMPv2-SMI.fxs
+<DEBUG> 5-Aug-2016::01:20:38.771 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMPv2-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.772 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-VIEW-BASED-ACM-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.773 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-NOTIFICATION-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.773 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-MPD-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.773 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/SNMP-COMMUNITY-MIB.fxs
+<DEBUG> 5-Aug-2016::01:20:38.774 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/snmp/IPV6-TC.fxs
+<DEBUG> 5-Aug-2016::01:20:38.774 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/tailf-aaa.fxs
+<DEBUG> 5-Aug-2016::01:20:38.775 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/subtele/load-dir/subtele.fxs
+<DEBUG> 5-Aug-2016::01:20:38.777 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/mdt/load-dir/mdt.fxs
+<DEBUG> 5-Aug-2016::01:20:38.788 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/etc/ncs/ncs.ccl
+<DEBUG> 5-Aug-2016::01:20:38.802 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/scripts/command/device_save.sh
+<INFO> 5-Aug-2016::01:20:38.858 ubuntu ncs[28960]: - Starting to listen for Internal IPC on 127.0.0.1:4569
+<INFO> 5-Aug-2016::01:20:39.143 ubuntu ncs[28960]: - Starting the NCS Java VM
+<DEBUG> 5-Aug-2016::01:20:39.301 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/subtele/templates/subtele.xml
+<INFO> 5-Aug-2016::01:20:39.320 ubuntu ncs[28960]: - Starting to listen for NETCONF SSH on 0.0.0.0:2022
+<INFO> 5-Aug-2016::01:20:39.382 ubuntu ncs[28960]: - Starting to listen for CLI SSH on 0.0.0.0:2024
+<INFO> 5-Aug-2016::01:20:39.482 ubuntu ncs[28960]: - Starting to listen for WebUI TCP on 0.0.0.0:8080
+<DEBUG> 5-Aug-2016::01:20:39.591 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMPv2-MIB
+<DEBUG> 5-Aug-2016::01:20:39.592 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-FRAMEWORK-MIB
+<DEBUG> 5-Aug-2016::01:20:39.592 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-MPD-MIB
+<INFO> 5-Aug-2016::01:20:39.712 ubuntu ncs[28960]: - Starting to listen for SNMP UDP on 0.0.0.0:4000
+<DEBUG> 5-Aug-2016::01:20:39.740 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/IANA-ITU-ALARM-TC-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.741 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/ITU-ALARM-TC-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.751 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.753 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/TAILF-ALARM-TC-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.754 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/etc/ncs/snmp/TAILF-TOP-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.755 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-COMMUNITY-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.757 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-TARGET-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.761 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-NOTIFICATION-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.762 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-USER-BASED-SM-MIB.bin
+<DEBUG> 5-Aug-2016::01:20:39.764 ubuntu ncs[28960]: - Loading MIB: /root/nso-4.1.1/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-VIEW-BASED-ACM-MIB.bin
+<INFO> 5-Aug-2016::01:20:41.172 ubuntu ncs[28960]: - NCS started vsn: 4.1.1
+<DEBUG> 5-Aug-2016::01:20:48.164 ubuntu ncs[28960]: - Loading file ./packages/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:20:48.169 ubuntu ncs[28960]: - Loading file ./packages/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:20:48.187 ubuntu ncs[28960]: - Copying NCS package from ./packages/subtele to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::01:20:48.613 ubuntu ncs[28960]: - Copying NCS package from ./packages/mdt to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::01:20:48.640 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:20:48.644 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::01:20:48.649 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/scripts/command/device_save.sh
+<DEBUG> 5-Aug-2016::01:20:48.775 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/subtele/templates/subtele.xml
+<CRIT> 5-Aug-2016::01:25:02.117 ubuntu ncs[28960]: - Daemon ncs-dp-2-subtele:RFSSkeleton died
+<DEBUG> 5-Aug-2016::02:22:35.277 ubuntu ncs[28960]: - Loading file ./packages/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::02:22:35.301 ubuntu ncs[28960]: - Loading file ./packages/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::02:22:35.329 ubuntu ncs[28960]: - Copying NCS package from ./packages/subtele to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::02:22:35.387 ubuntu ncs[28960]: - Copying NCS package from ./packages/mdt to ./state/packages-in-use.new/1
+<DEBUG> 5-Aug-2016::02:22:35.465 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/subtele/package-meta-data.xml
+<DEBUG> 5-Aug-2016::02:22:35.470 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/mdt/package-meta-data.xml
+<DEBUG> 5-Aug-2016::02:22:35.478 ubuntu ncs[28960]: - Loading file /root/nso-4.1.1/scripts/command/device_save.sh
+<DEBUG> 5-Aug-2016::02:22:35.670 ubuntu ncs[28960]: - Loading file ./state/packages-in-use/1/subtele/templates/subtele.xml
+<INFO> 5-Aug-2016::02:40:14.313 ubuntu ncs[28960]: - NCS stopping (ncs --stop called by root in /root/myproject)
+<INFO> 5-Aug-2016::02:40:14.788 ubuntu ncs[28960]: - The NCS Java VM terminated
+<INFO> 5-Aug-2016::02:40:15.009 ubuntu ncs[28960]: - Stopping to listen for NETCONF SSH on 0.0.0.0:2022

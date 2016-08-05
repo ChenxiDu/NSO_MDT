@@ -1,0 +1,19 @@
+<DEBUG> 5-Aug-2016::01:14:16.934 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/ietf-yang-types.fxs
+<DEBUG> 5-Aug-2016::01:14:16.934 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/iana-crypt-hash.fxs
+<DEBUG> 5-Aug-2016::01:14:16.934 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/ietf-inet-types.fxs
+<DEBUG> 5-Aug-2016::01:14:16.935 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/ietf-netconf-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:16.936 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/tailf-common-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:16.936 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/ietf-netconf-acm.fxs
+<DEBUG> 5-Aug-2016::01:14:16.937 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/ietf-netconf-notifications.fxs
+<DEBUG> 5-Aug-2016::01:14:16.938 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/tailf-netconf-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:16.938 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/tailf-confd-monitoring.fxs
+<DEBUG> 5-Aug-2016::01:14:16.940 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/tailf-acm.fxs
+<DEBUG> 5-Aug-2016::01:14:16.942 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/tailf-webui.fxs
+<DEBUG> 5-Aug-2016::01:14:16.943 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/tailf-aaa.fxs
+<DEBUG> 5-Aug-2016::01:14:16.943 ubuntu confd[27991]: - Loading file ./mdt.fxs
+<DEBUG> 5-Aug-2016::01:14:16.947 ubuntu confd[27991]: - Loading file /root/nso-4.1.1/netsim/confd/etc/confd/confd.ccl
+<INFO> 5-Aug-2016::01:14:17.006 ubuntu confd[27991]: - Starting to listen for Internal IPC on 127.0.0.1:5012
+<INFO> 5-Aug-2016::01:14:17.133 ubuntu confd[27991]: - CDB load: processing file: ./cdb/aaa_init.xml
+<INFO> 5-Aug-2016::01:14:17.213 ubuntu confd[27991]: - Starting to listen for NETCONF SSH on 0.0.0.0:12024
+<INFO> 5-Aug-2016::01:14:17.234 ubuntu confd[27991]: - Starting to listen for CLI SSH on 0.0.0.0:10024
+<INFO> 5-Aug-2016::01:14:17.338 ubuntu confd[27991]: - ConfD started vsn: 6.1.1

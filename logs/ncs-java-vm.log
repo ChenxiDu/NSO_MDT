@@ -1,0 +1,401 @@
+Starting java-vm with options:
+' -classpath :/root/nso-4.1.1/java/jar/* -Dport=4569 -Djava.security.egd=file:/dev/./urandom -Dfile.encoding=UTF-8'
+NCS JVM STARTING
+NcsLogger applying Default configuration!
+<INFO> 05-Aug-2016::01:14:21.674 NcsMain JVM-Launcher: - CONNECTED TO to NCS --> Socket[addr=/127.0.0.1,port=4569,localport=48572]
+<INFO> 05-Aug-2016::01:14:21.711 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:21.726 NcsMain JVM-Launcher: -  <= GOT INIT_JVM
+JMXURL : service:jmx:rmi://127.0.0.1:9901/jndi/rmi://127.0.0.1:9902/ncs
+<INFO> 05-Aug-2016::01:14:22.613 NcsMain JVM-Launcher: - ALARM SERVICE STARTED
+<INFO> 05-Aug-2016::01:14:22.613 NcsMain JVM-Launcher: - DONE COMMAND --> INIT_JVM
+<INFO> 05-Aug-2016::01:14:22.614 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:22.614 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:22.615 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:14:22.615 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/mdt/shared-jar/mdt-ns.jar
+<INFO> 05-Aug-2016::01:14:22.615 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:14:22.616 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:22.616 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:22.616 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:22.616 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:14:22.617 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/subtele/shared-jar/subtele-ns.jar
+<INFO> 05-Aug-2016::01:14:22.617 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:14:22.618 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:22.619 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:22.619 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:14:22.619 NcsMain JVM-Launcher: - FOUND TYPE: ned
+<WARN> 05-Aug-2016::01:14:22.620 NcsMain JVM-Launcher: - Returning NO CLASSLOADER!!
+<INFO> 05-Aug-2016::01:14:22.621 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:14:22.621 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] --> LOADED
+<INFO> 05-Aug-2016::01:14:22.621 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:14:22.624 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:22.624 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:14:22.625 NcsMain JVM-Launcher: - FOUND TYPE: callback
+<WARN> 05-Aug-2016::01:14:22.625 NcsMain JVM-Launcher: - WARNING No private-jars could be found!! package redeploy may not work
+<INFO> 05-Aug-2016::01:14:22.625 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] -->
+<ERROR> 05-Aug-2016::01:14:22.630 DpMuxManager JVM-Launcher: - Exception while executing an LOAD_PACKAGE transition
+com.tailf.ncs.NcsException: com.example.subtele.subteleRFS
+	at com.tailf.ncs.ctrl.AbstractPDEntry.load(AbstractPDEntry.java:255)
+	at com.tailf.ncs.ctrl.AbstractPDEntry$1.execute(AbstractPDEntry.java:84)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:174)
+	at com.tailf.ncs.ctrl.DpMuxManager.loadPackageEvent(DpMuxManager.java:102)
+	at com.tailf.ncs.NcsMain.loadPackage(NcsMain.java:949)
+	at com.tailf.ncs.NcsMain.access$1000(NcsMain.java:86)
+	at com.tailf.ncs.NcsMain$8.execute(NcsMain.java:299)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:170)
+	at com.tailf.ncs.NcsMain.mainLoop(NcsMain.java:689)
+	at com.tailf.ncs.NcsMain.run(NcsMain.java:486)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.example.subtele.subteleRFS
+	at javax.management.loading.MLet.findClass(MLet.java:988)
+	at javax.management.loading.MLet.findClass(MLet.java:922)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tailf.ncs.ctrl.AbstractPDEntry.load(AbstractPDEntry.java:244)
+	... 12 more
+<ERROR> 05-Aug-2016::01:14:22.632 NcsMain JVM-Launcher: - catched exception in mainLoop
+com.tailf.ncs.ctrl.NcsCtrlException: LOAD_PACKAGE[com.example.subtele.subteleRFS]
+	at com.tailf.ncs.ctrl.MuxManager.addToDeployException(MuxManager.java:37)
+	at com.tailf.ncs.NcsMain.loadPackage(NcsMain.java:960)
+	at com.tailf.ncs.NcsMain.access$1000(NcsMain.java:86)
+	at com.tailf.ncs.NcsMain$8.execute(NcsMain.java:299)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:170)
+	at com.tailf.ncs.NcsMain.mainLoop(NcsMain.java:689)
+	at com.tailf.ncs.NcsMain.run(NcsMain.java:486)
+	at java.lang.Thread.run(Thread.java:745)
+<INFO> 05-Aug-2016::01:14:22.638 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:22.639 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:14:22.639 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] -->
+<INFO> 05-Aug-2016::01:14:22.639 NcsMain JVM-Launcher: - => Nothing to deploy for component mdt:mdt
+<INFO> 05-Aug-2016::01:14:22.639 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] --> DONE
+<INFO> 05-Aug-2016::01:14:22.639 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:14:22.640 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:22.640 NcsMain JVM-Launcher: -  <= GOT DONE_LOADING
+<INFO> 05-Aug-2016::01:14:22.640 NcsMain JVM-Launcher: - DONE LOADING  -->
+<INFO> 05-Aug-2016::01:14:22.640 NcsMain JVM-Launcher: - DONE LOADING --> OK
+<INFO> 05-Aug-2016::01:14:22.641 NcsMain JVM-Launcher: - DONE COMMAND --> DONE_LOADING
+<INFO> 05-Aug-2016::01:14:22.645 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:33.716 NcsMain JVM-Launcher: -  <= GOT UNLOAD_ALL
+<INFO> 05-Aug-2016::01:14:33.716 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:14:33.716 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:14:33.716 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] -->
+<ERROR> 05-Aug-2016::01:14:33.719 DpMuxManager JVM-Launcher: - Exception while executing an UNLOAD_PACKAGE transition
+java.lang.NullPointerException
+	at com.tailf.ncs.ctrl.AbstractPDEntry.unload(AbstractPDEntry.java:135)
+	at com.tailf.ncs.ctrl.AbstractPDEntry$2.execute(AbstractPDEntry.java:98)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:174)
+	at com.tailf.ncs.ctrl.DpMuxManager.unloadPackageEvent(DpMuxManager.java:149)
+	at com.tailf.ncs.NcsMain.unloadPackage(NcsMain.java:999)
+	at com.tailf.ncs.NcsMain.unload(NcsMain.java:1050)
+	at com.tailf.ncs.NcsMain$3.execute(NcsMain.java:225)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:174)
+	at com.tailf.ncs.NcsMain.mainLoop(NcsMain.java:706)
+	at com.tailf.ncs.NcsMain.run(NcsMain.java:486)
+	at java.lang.Thread.run(Thread.java:745)
+<INFO> 05-Aug-2016::01:14:33.720 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:14:33.720 NcsMain JVM-Launcher: - DONE COMMAND --> UNLOAD_ALL
+<INFO> 05-Aug-2016::01:14:33.720 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:33.721 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:33.721 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:14:33.721 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/mdt/shared-jar/mdt-ns.jar
+<INFO> 05-Aug-2016::01:14:33.721 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:14:33.721 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:33.721 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:33.721 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:33.722 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:14:33.722 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/subtele/shared-jar/subtele-ns.jar
+<INFO> 05-Aug-2016::01:14:33.722 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:14:33.722 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:14:33.722 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:33.722 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:14:33.722 NcsMain JVM-Launcher: - FOUND TYPE: ned
+<WARN> 05-Aug-2016::01:14:33.723 NcsMain JVM-Launcher: - Returning NO CLASSLOADER!!
+<INFO> 05-Aug-2016::01:14:33.723 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:14:33.723 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] --> LOADED
+<INFO> 05-Aug-2016::01:14:33.723 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:14:33.723 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:33.723 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:14:33.724 NcsMain JVM-Launcher: - FOUND TYPE: callback
+<WARN> 05-Aug-2016::01:14:33.724 NcsMain JVM-Launcher: - WARNING No private-jars could be found!! package redeploy may not work
+<INFO> 05-Aug-2016::01:14:33.724 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] -->
+<ERROR> 05-Aug-2016::01:14:33.725 DpMuxManager JVM-Launcher: - Exception while executing an LOAD_PACKAGE transition
+com.tailf.ncs.NcsException: com.example.subtele.subteleRFS
+	at com.tailf.ncs.ctrl.AbstractPDEntry.load(AbstractPDEntry.java:255)
+	at com.tailf.ncs.ctrl.AbstractPDEntry$1.execute(AbstractPDEntry.java:84)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:174)
+	at com.tailf.ncs.ctrl.DpMuxManager.loadPackageEvent(DpMuxManager.java:102)
+	at com.tailf.ncs.NcsMain.loadPackage(NcsMain.java:949)
+	at com.tailf.ncs.NcsMain.access$1000(NcsMain.java:86)
+	at com.tailf.ncs.NcsMain$8.execute(NcsMain.java:299)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:170)
+	at com.tailf.ncs.NcsMain.mainLoop(NcsMain.java:689)
+	at com.tailf.ncs.NcsMain.run(NcsMain.java:486)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.example.subtele.subteleRFS
+	at javax.management.loading.MLet.findClass(MLet.java:988)
+	at javax.management.loading.MLet.findClass(MLet.java:922)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at com.tailf.ncs.ctrl.AbstractPDEntry.load(AbstractPDEntry.java:244)
+	... 12 more
+<ERROR> 05-Aug-2016::01:14:33.731 NcsMain JVM-Launcher: - catched exception in mainLoop
+com.tailf.ncs.ctrl.NcsCtrlException: LOAD_PACKAGE[com.example.subtele.subteleRFS]
+	at com.tailf.ncs.ctrl.MuxManager.addToDeployException(MuxManager.java:37)
+	at com.tailf.ncs.NcsMain.loadPackage(NcsMain.java:960)
+	at com.tailf.ncs.NcsMain.access$1000(NcsMain.java:86)
+	at com.tailf.ncs.NcsMain$8.execute(NcsMain.java:299)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:170)
+	at com.tailf.ncs.NcsMain.mainLoop(NcsMain.java:689)
+	at com.tailf.ncs.NcsMain.run(NcsMain.java:486)
+	at java.lang.Thread.run(Thread.java:745)
+<INFO> 05-Aug-2016::01:14:33.732 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:33.732 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:14:33.732 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] -->
+<INFO> 05-Aug-2016::01:14:33.732 NcsMain JVM-Launcher: - => Nothing to deploy for component mdt:mdt
+<INFO> 05-Aug-2016::01:14:33.732 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] --> DONE
+<INFO> 05-Aug-2016::01:14:33.732 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:14:33.733 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:14:33.733 NcsMain JVM-Launcher: -  <= GOT DONE_LOADING
+<INFO> 05-Aug-2016::01:14:33.733 NcsMain JVM-Launcher: - DONE LOADING  -->
+<INFO> 05-Aug-2016::01:14:33.733 NcsMain JVM-Launcher: - DONE LOADING --> OK
+<INFO> 05-Aug-2016::01:14:33.733 NcsMain JVM-Launcher: - DONE COMMAND --> DONE_LOADING
+<INFO> 05-Aug-2016::01:14:33.734 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:30.972 NcsMain JVM-Launcher: -  <= GOT UNLOAD_ALL
+<INFO> 05-Aug-2016::01:17:30.972 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:17:30.973 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:17:30.973 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] -->
+<ERROR> 05-Aug-2016::01:17:30.973 DpMuxManager JVM-Launcher: - Exception while executing an UNLOAD_PACKAGE transition
+java.lang.NullPointerException
+	at com.tailf.ncs.ctrl.AbstractPDEntry.unload(AbstractPDEntry.java:135)
+	at com.tailf.ncs.ctrl.AbstractPDEntry$2.execute(AbstractPDEntry.java:98)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:174)
+	at com.tailf.ncs.ctrl.DpMuxManager.unloadPackageEvent(DpMuxManager.java:149)
+	at com.tailf.ncs.NcsMain.unloadPackage(NcsMain.java:999)
+	at com.tailf.ncs.NcsMain.unload(NcsMain.java:1050)
+	at com.tailf.ncs.NcsMain$3.execute(NcsMain.java:225)
+	at com.tailf.ncs.ctrl.fsm.FSM$Transition.execute(FSM.java:286)
+	at com.tailf.ncs.ctrl.fsm.FSM.event(FSM.java:174)
+	at com.tailf.ncs.NcsMain.mainLoop(NcsMain.java:706)
+	at com.tailf.ncs.NcsMain.run(NcsMain.java:486)
+	at java.lang.Thread.run(Thread.java:745)
+<INFO> 05-Aug-2016::01:17:30.973 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:17:30.974 NcsMain JVM-Launcher: - DONE COMMAND --> UNLOAD_ALL
+<INFO> 05-Aug-2016::01:17:30.974 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:30.974 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:17:30.975 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:17:30.975 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/mdt/shared-jar/mdt-ns.jar
+<INFO> 05-Aug-2016::01:17:30.975 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:17:30.975 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:17:30.975 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:30.976 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:17:30.976 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:17:30.976 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/subtele/shared-jar/subtele-ns.jar
+<INFO> 05-Aug-2016::01:17:30.976 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:17:30.976 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:17:30.976 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:30.977 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:17:30.977 NcsMain JVM-Launcher: - FOUND TYPE: ned
+<WARN> 05-Aug-2016::01:17:30.977 NcsMain JVM-Launcher: - Returning NO CLASSLOADER!!
+<INFO> 05-Aug-2016::01:17:30.977 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:17:30.977 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] --> LOADED
+<INFO> 05-Aug-2016::01:17:30.977 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:17:30.978 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:30.978 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:17:30.978 NcsMain JVM-Launcher: - FOUND TYPE: callback
+<INFO> 05-Aug-2016::01:17:30.997 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:17:31.028 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] --> LOADED
+<INFO> 05-Aug-2016::01:17:31.029 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:17:31.029 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:31.029 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:17:31.029 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] -->
+<INFO> 05-Aug-2016::01:17:31.029 NcsMain JVM-Launcher: - => Nothing to deploy for component mdt:mdt
+<INFO> 05-Aug-2016::01:17:31.030 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] --> DONE
+<INFO> 05-Aug-2016::01:17:31.030 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:17:31.030 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:31.030 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:17:31.030 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] -->
+<INFO> 05-Aug-2016::01:17:31.118 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] --> DONE
+<INFO> 05-Aug-2016::01:17:31.118 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:17:31.119 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:17:31.119 NcsMain JVM-Launcher: -  <= GOT DONE_LOADING
+<INFO> 05-Aug-2016::01:17:31.119 NcsMain JVM-Launcher: - DONE LOADING  -->
+<INFO> 05-Aug-2016::01:17:31.119 NcsMain JVM-Launcher: - DONE LOADING --> OK
+<INFO> 05-Aug-2016::01:17:31.119 NcsMain JVM-Launcher: - DONE COMMAND --> DONE_LOADING
+<INFO> 05-Aug-2016::01:17:31.123 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:27.600 NcsMain JVM-Launcher: -  <= GOT STOP_VM
+<WARN> 05-Aug-2016::01:20:27.601 NcsMain JVM-Launcher: - STOPPING
+<WARN> 05-Aug-2016::01:20:27.601 NcsMain JVM-Launcher: - Stopping by System.exit()
+<WARN> 05-Aug-2016::01:20:27.601 NcsMain JVM-Launcher: -  NCS JVM STOPPED
+Starting java-vm with options:
+' -classpath :/root/nso-4.1.1/java/jar/* -Dport=4569 -Djava.security.egd=file:/dev/./urandom -Dfile.encoding=UTF-8'
+NCS JVM STARTING
+NcsLogger applying Default configuration!
+<INFO> 05-Aug-2016::01:20:39.973 NcsMain JVM-Launcher: - CONNECTED TO to NCS --> Socket[addr=/127.0.0.1,port=4569,localport=48706]
+<INFO> 05-Aug-2016::01:20:40.002 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:40.016 NcsMain JVM-Launcher: -  <= GOT INIT_JVM
+JMXURL : service:jmx:rmi://127.0.0.1:9901/jndi/rmi://127.0.0.1:9902/ncs
+<INFO> 05-Aug-2016::01:20:40.845 NcsMain JVM-Launcher: - ALARM SERVICE STARTED
+<INFO> 05-Aug-2016::01:20:40.846 NcsMain JVM-Launcher: - DONE COMMAND --> INIT_JVM
+<INFO> 05-Aug-2016::01:20:40.846 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:40.846 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:40.847 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:20:40.847 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/mdt/shared-jar/mdt-ns.jar
+<INFO> 05-Aug-2016::01:20:40.848 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:20:40.848 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:40.848 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:40.848 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:40.848 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:20:40.849 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/subtele/shared-jar/subtele-ns.jar
+<INFO> 05-Aug-2016::01:20:40.849 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:20:40.850 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:40.850 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:40.851 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:40.851 NcsMain JVM-Launcher: - FOUND TYPE: ned
+<WARN> 05-Aug-2016::01:20:40.852 NcsMain JVM-Launcher: - Returning NO CLASSLOADER!!
+<INFO> 05-Aug-2016::01:20:40.852 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:20:40.852 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] --> LOADED
+<INFO> 05-Aug-2016::01:20:40.854 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:40.855 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:40.855 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:40.855 NcsMain JVM-Launcher: - FOUND TYPE: callback
+<INFO> 05-Aug-2016::01:20:40.873 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:20:40.956 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] --> LOADED
+<INFO> 05-Aug-2016::01:20:40.957 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:40.957 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:40.957 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:40.957 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] -->
+<INFO> 05-Aug-2016::01:20:40.958 NcsMain JVM-Launcher: - => Nothing to deploy for component mdt:mdt
+<INFO> 05-Aug-2016::01:20:40.958 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] --> DONE
+<INFO> 05-Aug-2016::01:20:40.958 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:40.958 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:40.958 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:40.958 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] -->
+<INFO> 05-Aug-2016::01:20:41.053 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] --> DONE
+<INFO> 05-Aug-2016::01:20:41.054 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:41.054 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:41.054 NcsMain JVM-Launcher: -  <= GOT DONE_LOADING
+<INFO> 05-Aug-2016::01:20:41.054 NcsMain JVM-Launcher: - DONE LOADING  -->
+<INFO> 05-Aug-2016::01:20:41.055 NcsMain JVM-Launcher: - DONE LOADING --> OK
+<INFO> 05-Aug-2016::01:20:41.055 NcsMain JVM-Launcher: - DONE COMMAND --> DONE_LOADING
+<INFO> 05-Aug-2016::01:20:41.055 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:48.791 NcsMain JVM-Launcher: -  <= GOT UNLOAD_ALL
+<INFO> 05-Aug-2016::01:20:48.791 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:20:48.791 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:20:48.791 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] -->
+<WARN> 05-Aug-2016::01:20:48.792 Dp NCS-DpMUX-1-subtele:RFSSkeleton: - Socket was closed
+<INFO> 05-Aug-2016::01:20:48.795 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:20:48.795 NcsMain JVM-Launcher: - DONE COMMAND --> UNLOAD_ALL
+<INFO> 05-Aug-2016::01:20:48.795 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:48.800 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:48.802 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:20:48.804 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/mdt/shared-jar/mdt-ns.jar
+<INFO> 05-Aug-2016::01:20:48.808 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::01:20:48.809 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:48.810 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:48.810 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:48.810 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:20:48.811 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/subtele/shared-jar/subtele-ns.jar
+<INFO> 05-Aug-2016::01:20:48.811 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::01:20:48.816 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::01:20:48.818 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:48.818 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:48.819 NcsMain JVM-Launcher: - FOUND TYPE: ned
+<WARN> 05-Aug-2016::01:20:48.819 NcsMain JVM-Launcher: - Returning NO CLASSLOADER!!
+<INFO> 05-Aug-2016::01:20:48.819 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::01:20:48.819 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] --> LOADED
+<INFO> 05-Aug-2016::01:20:48.819 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:48.820 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:48.820 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:48.820 NcsMain JVM-Launcher: - FOUND TYPE: callback
+<INFO> 05-Aug-2016::01:20:48.828 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::01:20:48.902 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] --> LOADED
+<INFO> 05-Aug-2016::01:20:48.906 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::01:20:48.906 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:48.906 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:48.906 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] -->
+<INFO> 05-Aug-2016::01:20:48.907 NcsMain JVM-Launcher: - => Nothing to deploy for component mdt:mdt
+<INFO> 05-Aug-2016::01:20:48.907 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] --> DONE
+<INFO> 05-Aug-2016::01:20:48.907 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:48.907 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:48.907 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:48.907 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] -->
+<INFO> 05-Aug-2016::01:20:49.019 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] --> DONE
+<INFO> 05-Aug-2016::01:20:49.023 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::01:20:49.024 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::01:20:49.025 NcsMain JVM-Launcher: -  <= GOT DONE_LOADING
+<INFO> 05-Aug-2016::01:20:49.026 NcsMain JVM-Launcher: - DONE LOADING  -->
+<INFO> 05-Aug-2016::01:20:49.030 NcsMain JVM-Launcher: - DONE LOADING --> OK
+<INFO> 05-Aug-2016::01:20:49.030 NcsMain JVM-Launcher: - DONE COMMAND --> DONE_LOADING
+<INFO> 05-Aug-2016::01:20:49.031 NcsMain JVM-Launcher: - READ SOCKET =>
+Search returned[com.github.dockerjava.api.model.Image@650b287f[created=1470384734,id=sha256:f0122d3b708e3fbb5b6edf90724eb2cf493aae5a61050e91078d423102973316,parentId=sha256:fabaa26ae6a783fe3bc5e3db78b6c8397dc0f6ae86b87e4c9305b0c9da388a23,repoTags={elk_kibana:latest},size=345295464,virtualSize=345295464], com.github.dockerjava.api.model.Image@7e2267cd[created=1470384435,id=sha256:4a058c87e1dc5ee4248017520f38ff06baddbc3283a1b9cd9a8cc8ffc680f99f,parentId=sha256:b341f25baae0d98cd063c76ff614c1c020ff816a2db8e66301259148d7ce1042,repoTags={elk_logstash:latest},size=877524925,virtualSize=877524925], com.github.dockerjava.api.model.Image@2fdd9291[created=1470383639,id=sha256:574beac1d416dc1cce06beb27088a1630d5107410ee1840f56aa6062d33043ff,parentId=sha256:af9a23a1480a8967dd3527dc6e44bc9e12fe4e8ce0e39f771a96657d7e6c8710,repoTags={elk_elasticsearch:latest},size=345037312,virtualSize=345037312], com.github.dockerjava.api.model.Image@5e4da34e[created=1469810873,id=sha256:372859dd1c695759fe765be375346390ddd393f76fa84319630d1d64b85b9806,parentId=,repoTags={java:8-jre},size=311023415,virtualSize=311023415], com.github.dockerjava.api.model.Image@4db1f211[created=1469200742,id=sha256:0ccb13bf19544abff3bd1f5e69e17c2ad99439408a5a0bac15cf00443bdeb2c7,parentId=,repoTags={ubuntu:14.04},size=187957795,virtualSize=187957795], com.github.dockerjava.api.model.Image@69cb038a[created=1467401967,id=sha256:c54a2cc56cbb2f04003c1cd4507e118af7c0d340fe7e2720f70976c4b75237dc,parentId=,repoTags={hello-world:latest},size=1848,virtualSize=1848], com.github.dockerjava.api.model.Image@3a32097c[created=1465510343,id=sha256:264282a59a957ac68c14d9c7b8a37db5097c019f52e6580ead683a91e6ab064b,parentId=,repoTags={java:8},size=669244578,virtualSize=669244578]]
+<ERROR> 05-Aug-2016::01:25:00.978 NcsMain Did-6-Worker-10: - Received exception from package 'subtele' Message: '{"message":"starting container with HostConfig was deprecated since v1.10 and removed in v1.12"}
+'
+<WARN> 05-Aug-2016::01:25:00.978 NcsMain Did-6-Worker-10: - Initializing redeploy package subtele
+<INFO> 05-Aug-2016::01:25:02.097 NcsMain NCS-package-restarter: - REDEPLOY ["subtele"] -->
+<INFO> 05-Aug-2016::01:25:02.098 NcsMain NCS-package-restarter: - REDEPLOY PACKAGE COLLECTION  -->
+<INFO> 05-Aug-2016::01:25:02.099 NcsMain NCS-package-restarter: - packages [PackageData=[PackageName="subtele", : [Component=[ComponentName:"RFSSkeleton":,ComponentType:"callback",Classes=[[com.example.subtele.subteleRFS]]]] jars : [file:///root/myproject/state/packages-in-use/1/subtele/private-jar/javax.ws.rs-api.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jersey-common.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/hk2-locator.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/bcpkix-jdk15on.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jeplite.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/javax.annotation-api.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-codec-http.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/slf4j-simple.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/docker-java-javadoc.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/osgi-resource-locator.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/slf4j-simple-sources.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/httpclient.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-handler-proxy.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-transport-native-epoll-linux-x86_64.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-buffer.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/commons-compress.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/guava.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/chunk-templates.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-resolver.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/javassist.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/ivy-2.4.0.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-common.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-transport.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/commons-logging.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jackson-core.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jackson-databind.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/hk2-utils.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/commons-io.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/commons-codec.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/httpcore.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jackson-annotations.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jersey-guava.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jersey-apache-connector.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/docker-java-sources.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-handler.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/slf4j-api.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jersey-client.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/aopalliance-repackaged.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jackson-jaxrs-json-provider.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/log4j.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/chunk-templates-sources.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/logkit.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/commons-lang.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/subtele.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/unix-socket-factory.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-codec-socks.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/bcprov-jdk15on.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/slf4j-simple-javadoc.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/servlet-api.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jcl-over-slf4j.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jackson-module-jaxb-annotations.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/netty-codec.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/chunk-templates-javadoc.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/hk2-api.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/json-smart.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/docker-java.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/jackson-jaxrs-base.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/annotations.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/xz.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/javax.inject.jar, file:///root/myproject/state/packages-in-use/1/subtele/private-jar/avalon-framework.jar]]]
+<WARN> 05-Aug-2016::01:25:02.119 Dp NCS-DpMUX-2-subtele:RFSSkeleton: - Socket was closed
+<INFO> 05-Aug-2016::01:25:02.216 NcsMain NCS-package-restarter: - REDEPLOY PACKAGE COLLECTION  --> OK
+<INFO> 05-Aug-2016::01:25:02.220 NcsMain NCS-package-restarter: - REDEPLOY ["subtele"] --> DONE
+<INFO> 05-Aug-2016::02:22:35.695 NcsMain JVM-Launcher: -  <= GOT UNLOAD_ALL
+<INFO> 05-Aug-2016::02:22:35.731 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::02:22:35.736 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::02:22:35.737 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] -->
+<WARN> 05-Aug-2016::02:22:35.744 Dp NCS-DpMUX-3-subtele:RFSSkeleton: - Socket was closed
+<INFO> 05-Aug-2016::02:22:35.859 NcsMain JVM-Launcher: - UNLOAD PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::02:22:35.875 NcsMain JVM-Launcher: - DONE COMMAND --> UNLOAD_ALL
+<INFO> 05-Aug-2016::02:22:35.877 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::02:22:35.879 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::02:22:35.887 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::02:22:35.889 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/mdt/shared-jar/mdt-ns.jar
+<INFO> 05-Aug-2016::02:22:35.892 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["mdt"] --> OK
+<INFO> 05-Aug-2016::02:22:35.893 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::02:22:35.894 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::02:22:35.895 NcsMain JVM-Launcher: -  <= GOT LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::02:22:35.895 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::02:22:35.896 NcsMain JVM-Launcher: - loading shared jar: file:///root/myproject/state/packages-in-use/1/subtele/shared-jar/subtele-ns.jar
+<INFO> 05-Aug-2016::02:22:35.897 NcsMain JVM-Launcher: - LOAD SHARED PACKAGE ["subtele"] --> OK
+<INFO> 05-Aug-2016::02:22:35.897 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_SHARED_JARS
+<INFO> 05-Aug-2016::02:22:35.898 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::02:22:35.900 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::02:22:35.902 NcsMain JVM-Launcher: - FOUND TYPE: ned
+<WARN> 05-Aug-2016::02:22:35.904 NcsMain JVM-Launcher: - Returning NO CLASSLOADER!!
+<INFO> 05-Aug-2016::02:22:35.905 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] -->
+<INFO> 05-Aug-2016::02:22:35.906 NcsMain JVM-Launcher: - LOADING PACKAGE ["mdt"] --> LOADED
+<INFO> 05-Aug-2016::02:22:35.906 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::02:22:35.907 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::02:22:35.909 NcsMain JVM-Launcher: -  <= GOT LOAD_PACKAGE
+<INFO> 05-Aug-2016::02:22:35.909 NcsMain JVM-Launcher: - FOUND TYPE: callback
+<INFO> 05-Aug-2016::02:22:35.927 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] -->
+<INFO> 05-Aug-2016::02:22:36.313 NcsMain JVM-Launcher: - LOADING PACKAGE ["subtele"] --> LOADED
+<INFO> 05-Aug-2016::02:22:36.314 NcsMain JVM-Launcher: - DONE COMMAND --> LOAD_PACKAGE
+<INFO> 05-Aug-2016::02:22:36.314 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::02:22:36.315 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::02:22:36.315 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] -->
+<INFO> 05-Aug-2016::02:22:36.320 NcsMain JVM-Launcher: - => Nothing to deploy for component mdt:mdt
+<INFO> 05-Aug-2016::02:22:36.321 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["mdt:mdt"] --> DONE
+<INFO> 05-Aug-2016::02:22:36.321 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::02:22:36.322 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::02:22:36.322 NcsMain JVM-Launcher: -  <= GOT INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::02:22:36.323 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] -->
+<INFO> 05-Aug-2016::02:22:36.383 NcsMain JVM-Launcher: - INSTANTIATE COMPONENT ["subtele:RFSSkeleton"] --> DONE
+<INFO> 05-Aug-2016::02:22:36.385 NcsMain JVM-Launcher: - DONE COMMAND --> INSTANTIATE_COMPONENT
+<INFO> 05-Aug-2016::02:22:36.406 NcsMain JVM-Launcher: - READ SOCKET =>
+<INFO> 05-Aug-2016::02:22:36.408 NcsMain JVM-Launcher: -  <= GOT DONE_LOADING
+<INFO> 05-Aug-2016::02:22:36.408 NcsMain JVM-Launcher: - DONE LOADING  -->
+<INFO> 05-Aug-2016::02:22:36.410 NcsMain JVM-Launcher: - DONE LOADING --> OK
+<INFO> 05-Aug-2016::02:22:36.411 NcsMain JVM-Launcher: - DONE COMMAND --> DONE_LOADING
+<INFO> 05-Aug-2016::02:22:36.412 NcsMain JVM-Launcher: - READ SOCKET =>
+Search returned[com.github.dockerjava.api.model.Image@3f040339[created=1470384734,id=sha256:f0122d3b708e3fbb5b6edf90724eb2cf493aae5a61050e91078d423102973316,parentId=sha256:fabaa26ae6a783fe3bc5e3db78b6c8397dc0f6ae86b87e4c9305b0c9da388a23,repoTags={elk_kibana:latest},size=345295464,virtualSize=345295464], com.github.dockerjava.api.model.Image@571eaca[created=1470384435,id=sha256:4a058c87e1dc5ee4248017520f38ff06baddbc3283a1b9cd9a8cc8ffc680f99f,parentId=sha256:b341f25baae0d98cd063c76ff614c1c020ff816a2db8e66301259148d7ce1042,repoTags={elk_logstash:latest},size=877524925,virtualSize=877524925], com.github.dockerjava.api.model.Image@55032679[created=1470383639,id=sha256:574beac1d416dc1cce06beb27088a1630d5107410ee1840f56aa6062d33043ff,parentId=sha256:af9a23a1480a8967dd3527dc6e44bc9e12fe4e8ce0e39f771a96657d7e6c8710,repoTags={elk_elasticsearch:latest},size=345037312,virtualSize=345037312], com.github.dockerjava.api.model.Image@3034f22[created=1469810873,id=sha256:372859dd1c695759fe765be375346390ddd393f76fa84319630d1d64b85b9806,parentId=,repoTags={java:8-jre},size=311023415,virtualSize=311023415], com.github.dockerjava.api.model.Image@5cdca7d1[created=1469200742,id=sha256:0ccb13bf19544abff3bd1f5e69e17c2ad99439408a5a0bac15cf00443bdeb2c7,parentId=,repoTags={ubuntu:14.04},size=187957795,virtualSize=187957795], com.github.dockerjava.api.model.Image@4eac5666[created=1467401967,id=sha256:c54a2cc56cbb2f04003c1cd4507e118af7c0d340fe7e2720f70976c4b75237dc,parentId=,repoTags={hello-world:latest},size=1848,virtualSize=1848], com.github.dockerjava.api.model.Image@3f6da92d[created=1465510343,id=sha256:264282a59a957ac68c14d9c7b8a37db5097c019f52e6580ead683a91e6ab064b,parentId=,repoTags={java:8},size=669244578,virtualSize=669244578]]
+<INFO> 05-Aug-2016::02:40:14.323 NcsMain JVM-Launcher: -  <= GOT STOP_VM
+<WARN> 05-Aug-2016::02:40:14.343 NcsMain JVM-Launcher: - STOPPING
+<WARN> 05-Aug-2016::02:40:14.345 NcsMain JVM-Launcher: - Stopping by System.exit()
+<WARN> 05-Aug-2016::02:40:14.346 NcsMain JVM-Launcher: -  NCS JVM STOPPED

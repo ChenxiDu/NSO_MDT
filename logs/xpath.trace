@@ -1,0 +1,940 @@
+
+5-Aug-2016::01:14:20.788 Evaluating XPath for: /ncs:cluster/commit-queue/enabled:
+   . = 'false' or
+not (/cluster/remote-node
+       [not (username)]
+       [deref(authgroup)/../default-map[same-user or same-pass]])
+get_elem("/ncs:cluster/commit-queue/enabled") = false
+5-Aug-2016::01:14:20.792 XPath for: /ncs:cluster/commit-queue/enabled returns true
+
+5-Aug-2016::01:14:20.792 Evaluating XPath for: /ncs:cluster/device-notifications/enabled:
+   . = 'false' or
+not (/cluster/remote-node
+       [not (username)]
+       [deref(authgroup)/../default-map[same-user or same-pass]])
+get_elem("/ncs:cluster/device-notifications/enabled") = false
+5-Aug-2016::01:14:20.792 XPath for: /ncs:cluster/device-notifications/enabled returns true
+
+5-Aug-2016::01:14:20.792 Evaluating XPath for: /ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level:
+  (. = 'auth-priv' and ../priv) or (. != 'auth-priv')
+get_elem("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level") = auth-priv
+exists("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/priv") = true
+5-Aug-2016::01:14:20.793 XPath for: /ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level returns true
+
+5-Aug-2016::01:14:20.793 Evaluating XPath for: /ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level:
+  . = 'no-auth-no-priv' or ../auth
+get_elem("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level") = auth-priv
+exists("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/auth") = true
+5-Aug-2016::01:14:20.793 XPath for: /ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level returns true
+
+5-Aug-2016::01:14:20.793 Evaluating XPath for: /ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/priv:
+  ../auth
+exists("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/auth") = true
+5-Aug-2016::01:14:20.793 XPath for: /ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/priv returns true
+
+5-Aug-2016::01:14:21.412 Evaluating XPath for: /snmp:snmp/agent/version/v3:
+  ../../engine-id
+exists("/snmp:snmp/agent/engine-id") = true
+5-Aug-2016::01:14:21.412 XPath for: /snmp:snmp/agent/version/v3 returns true
+
+5-Aug-2016::01:14:21.414 Evaluating XPath for: /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view") = internet
+5-Aug-2016::01:14:21.414 XPath for: /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view returns true
+
+5-Aug-2016::01:14:21.414 Evaluating XPath for: /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view") = internet
+5-Aug-2016::01:14:21.414 XPath for: /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view returns true
+
+5-Aug-2016::01:14:21.415 Evaluating XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view") = internet
+5-Aug-2016::01:14:21.420 XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view returns true
+
+5-Aug-2016::01:14:21.420 Evaluating XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view") = internet
+5-Aug-2016::01:14:21.421 XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view returns true
+
+5-Aug-2016::01:14:21.421 Evaluating XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view") = internet
+5-Aug-2016::01:14:21.421 XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view returns true
+
+5-Aug-2016::01:14:21.421 Evaluating XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view") = internet
+5-Aug-2016::01:14:21.422 XPath for: /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view returns true
+
+5-Aug-2016::01:14:21.422 Evaluating XPath for: /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view") = internet
+5-Aug-2016::01:14:21.422 XPath for: /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view returns true
+
+5-Aug-2016::01:14:21.422 Evaluating XPath for: /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view") = internet
+5-Aug-2016::01:14:21.423 XPath for: /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view returns true
+
+5-Aug-2016::01:14:21.423 Evaluating XPath for: /snmp:snmp/notify{foo}/type:
+  . != 'inform' or
+count(
+  /snmp/target[tag = current()/../tag]/../usm[../agent/engine-id])
+= count(
+  /snmp/target[tag = current()/../tag]/../usm)
+get_elem("/snmp:snmp/notify{foo}/type") = trap
+5-Aug-2016::01:14:21.423 XPath for: /snmp:snmp/notify{foo}/type returns true
+
+5-Aug-2016::01:14:21.423 Evaluating XPath for: /snmp:snmp/usm/local/user{initial}/priv:
+  ../auth
+exists("/snmp:snmp/usm/local/user{initial}/auth") = true
+5-Aug-2016::01:14:21.423 XPath for: /snmp:snmp/usm/local/user{initial}/priv returns true
+
+5-Aug-2016::01:14:21.424 Evaluating XPath for: /snmp:snmp/target{monitor}/v2c/sec-name:
+  /snmp/community/sec-name
+get_next(/snmp:snmp/community) = {public}
+get_elem("/snmp:snmp/community{public}/sec-name") = public
+get_elem("/snmp:snmp/target{monitor}/v2c/sec-name") = public
+5-Aug-2016::01:14:21.429 XPath for: /snmp:snmp/target{monitor}/v2c/sec-name returns true
+
+5-Aug-2016::01:18:11.052 Query(1): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::01:18:11.322 Query(1): done, returned 1 results
+5-Aug-2016::01:18:14.890 Query(2): Starting evaluation of:
+  subtele:subtele
+Selection:
+  subscription-id
+  device-modifications
+  enable
+  source-qos-marking
+  tele_visual
+5-Aug-2016::01:18:14.981 Query(2): done, returned 1 results
+5-Aug-2016::01:18:17.433 Query(3): Starting evaluation of:
+  subtele:subtele
+Selection:
+  subscription-id
+  device-modifications
+  enable
+  source-qos-marking
+  tele_visual
+5-Aug-2016::01:18:17.473 Query(3): done, returned 2 results
+5-Aug-2016::01:18:25.997 Query(4): Starting evaluation of:
+  device
+Selection:
+  name
+5-Aug-2016::01:18:26.096 Query(4): done, returned 1 results
+5-Aug-2016::01:18:38.900 Query(5): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::01:18:39.020 Query(5): done, returned 1 results
+5-Aug-2016::01:18:43.334 Query(6): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+
+5-Aug-2016::01:18:43.347 Query(7): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::01:18:43.425 Query(6): done, returned 1 results5-Aug-2016::01:18:43.445 Query(7): done, returned 1 results
+5-Aug-2016::01:18:45.583 Query(8): Starting evaluation of:
+  group
+Selection:
+  name
+
+5-Aug-2016::01:18:45.590 Query(9): Starting evaluation of:
+  device-group
+Selection:
+  name
+5-Aug-2016::01:18:45.689 Query(8): done, returned 2 results5-Aug-2016::01:18:45.697 Query(9): done, returned 1 results
+5-Aug-2016::01:18:48.216 Query(10): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::01:18:48.629 Query(10): done, returned 1 results
+5-Aug-2016::01:22:55.634 Evaluating XPath for: /ncs:devices/device{xr-0}:
+  remote-node or address
+get_elem("/ncs:devices/device{xr-0}/remote-node") = not_found
+get_elem("/ncs:devices/device{xr-0}/address") = 127.0.0.1
+5-Aug-2016::01:22:55.637 XPath for: /ncs:devices/device{xr-0} returns true
+
+5-Aug-2016::01:22:55.638 Evaluating XPath for: /ncs:devices/device{xr-0}/authgroup:
+  /devices/authgroups/group/name
+get_elem("/ncs:devices/device{xr-0}/authgroup") = default
+exists("/ncs:devices/authgroups/group{default}") = true
+get_elem("/ncs:devices/device{xr-0}/authgroup") = default
+5-Aug-2016::01:22:55.638 XPath for: /ncs:devices/device{xr-0}/authgroup returns true
+
+5-Aug-2016::01:22:55.638 Evaluating XPath for: /ncs:devices/device{xr-0}/device-type:
+  ../remote-node or netconf or generic or cli or snmp
+get_elem("/ncs:devices/device{xr-0}/remote-node") = not_found
+exists("/ncs:devices/device{xr-0}/device-type/netconf") = true
+5-Aug-2016::01:22:55.638 XPath for: /ncs:devices/device{xr-0}/device-type returns true
+
+5-Aug-2016::01:22:55.638 Evaluating XPath for: /ncs:devices/device{xr-0}/device-type/netconf:
+  ../../authgroup
+get_elem("/ncs:devices/device{xr-0}/authgroup") = default
+5-Aug-2016::01:22:55.638 XPath for: /ncs:devices/device{xr-0}/device-type/netconf returns true
+
+5-Aug-2016::01:22:55.639 Evaluating XPath for: /ncs:devices/device{xr-1}:
+  remote-node or address
+get_elem("/ncs:devices/device{xr-1}/remote-node") = not_found
+get_elem("/ncs:devices/device{xr-1}/address") = 127.0.0.1
+5-Aug-2016::01:22:55.639 XPath for: /ncs:devices/device{xr-1} returns true
+
+5-Aug-2016::01:22:55.639 Evaluating XPath for: /ncs:devices/device{xr-1}/authgroup:
+  /devices/authgroups/group/name
+get_elem("/ncs:devices/device{xr-1}/authgroup") = default
+exists("/ncs:devices/authgroups/group{default}") = true
+get_elem("/ncs:devices/device{xr-1}/authgroup") = default
+5-Aug-2016::01:22:55.639 XPath for: /ncs:devices/device{xr-1}/authgroup returns true
+
+5-Aug-2016::01:22:55.639 Evaluating XPath for: /ncs:devices/device{xr-1}/device-type:
+  ../remote-node or netconf or generic or cli or snmp
+get_elem("/ncs:devices/device{xr-1}/remote-node") = not_found
+exists("/ncs:devices/device{xr-1}/device-type/netconf") = true
+5-Aug-2016::01:22:55.640 XPath for: /ncs:devices/device{xr-1}/device-type returns true
+
+5-Aug-2016::01:22:55.640 Evaluating XPath for: /ncs:devices/device{xr-1}/device-type/netconf:
+  ../../authgroup
+get_elem("/ncs:devices/device{xr-1}/authgroup") = default
+5-Aug-2016::01:22:55.640 XPath for: /ncs:devices/device{xr-1}/device-type/netconf returns true
+
+5-Aug-2016::01:22:55.640 Evaluating XPath for: /ncs:devices/device{xr-2}:
+  remote-node or address
+get_elem("/ncs:devices/device{xr-2}/remote-node") = not_found
+get_elem("/ncs:devices/device{xr-2}/address") = 127.0.0.1
+5-Aug-2016::01:22:55.640 XPath for: /ncs:devices/device{xr-2} returns true
+
+5-Aug-2016::01:22:55.640 Evaluating XPath for: /ncs:devices/device{xr-2}/authgroup:
+  /devices/authgroups/group/name
+get_elem("/ncs:devices/device{xr-2}/authgroup") = default
+exists("/ncs:devices/authgroups/group{default}") = true
+get_elem("/ncs:devices/device{xr-2}/authgroup") = default
+5-Aug-2016::01:22:55.641 XPath for: /ncs:devices/device{xr-2}/authgroup returns true
+
+5-Aug-2016::01:22:55.641 Evaluating XPath for: /ncs:devices/device{xr-2}/device-type:
+  ../remote-node or netconf or generic or cli or snmp
+get_elem("/ncs:devices/device{xr-2}/remote-node") = not_found
+exists("/ncs:devices/device{xr-2}/device-type/netconf") = true
+5-Aug-2016::01:22:55.641 XPath for: /ncs:devices/device{xr-2}/device-type returns true
+
+5-Aug-2016::01:22:55.641 Evaluating XPath for: /ncs:devices/device{xr-2}/device-type/netconf:
+  ../../authgroup
+get_elem("/ncs:devices/device{xr-2}/authgroup") = default
+5-Aug-2016::01:22:55.641 XPath for: /ncs:devices/device{xr-2}/device-type/netconf returns true
+
+5-Aug-2016::01:23:16.009 Evaluating XPath for: /ncs:devices/device{xr-0}/live-status:
+  ../ncs:device-type/ncs:netconf
+exists("/ncs:devices/device{xr-0}/device-type/netconf") = true
+5-Aug-2016::01:23:16.009 XPath for: /ncs:devices/device{xr-0}/live-status returns true
+
+5-Aug-2016::01:23:16.009 Evaluating XPath for: /ncs:devices/device{xr-0}/live-status/netconf:
+  ../ncs:device-type/ncs:netconf
+keypath not found: "/ncs:devices/device{xr-0}/live-status/device-type"
+5-Aug-2016::01:23:16.009 XPath for: /ncs:devices/device{xr-0}/live-status/netconf returns false
+
+5-Aug-2016::01:23:16.524 Evaluating XPath for: /ncs:devices/device{xr-1}/live-status:
+  ../ncs:device-type/ncs:netconf
+exists("/ncs:devices/device{xr-1}/device-type/netconf") = true
+5-Aug-2016::01:23:16.524 XPath for: /ncs:devices/device{xr-1}/live-status returns true
+
+5-Aug-2016::01:23:16.524 Evaluating XPath for: /ncs:devices/device{xr-1}/live-status/netconf:
+  ../ncs:device-type/ncs:netconf
+keypath not found: "/ncs:devices/device{xr-1}/live-status/device-type"
+5-Aug-2016::01:23:16.524 XPath for: /ncs:devices/device{xr-1}/live-status/netconf returns false
+
+5-Aug-2016::01:23:17.067 Evaluating XPath for: /ncs:devices/device{xr-2}/live-status:
+  ../ncs:device-type/ncs:netconf
+exists("/ncs:devices/device{xr-2}/device-type/netconf") = true
+5-Aug-2016::01:23:17.069 XPath for: /ncs:devices/device{xr-2}/live-status returns true
+
+5-Aug-2016::01:23:17.069 Evaluating XPath for: /ncs:devices/device{xr-2}/live-status/netconf:
+  ../ncs:device-type/ncs:netconf
+keypath not found: "/ncs:devices/device{xr-2}/live-status/device-type"
+5-Aug-2016::01:23:17.069 XPath for: /ncs:devices/device{xr-2}/live-status/netconf returns false
+
+5-Aug-2016::01:23:29.453 Query(1): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::01:23:29.759 Query(1): done, returned 4 results
+5-Aug-2016::01:23:34.579 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven:
+  not(../../ncs:module) or ../../ncs:module[ncs:name='mdt']
+get_next(/ncs:devices/device{xr-0}/module) = {mdt}
+exists("/ncs:devices/device{xr-0}/module{mdt}") = true
+5-Aug-2016::01:23:34.580 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven returns true
+
+5-Aug-2016::01:23:41.919 Query(2): Starting evaluation of:
+  subtele:subtele
+Selection:
+  subscription-id
+  device-modifications
+  enable
+  source-qos-marking
+  tele_visual
+5-Aug-2016::01:23:42.034 Query(2): done, returned 1 results
+5-Aug-2016::01:23:45.553 Query(3): Starting evaluation of:
+  subtele:subtele
+Selection:
+  subscription-id
+  device-modifications
+  enable
+  source-qos-marking
+  tele_visual
+5-Aug-2016::01:23:45.626 Query(3): done, returned 2 results
+5-Aug-2016::01:23:55.465 Query(4): Starting evaluation of:
+  device
+Selection:
+  name
+5-Aug-2016::01:23:55.592 Query(4): done, returned 4 results
+5-Aug-2016::01:24:58.087 maapi_xpath_eval() evaluating: $DEVICE
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.090 maapi_xpath_eval_expr() evaluating: string($DEVICE)
+5-Aug-2016::01:24:58.090 maapi_xpath_eval_expr() result: xr-0
+
+5-Aug-2016::01:24:58.091 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.091 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::01:24:58.091 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.092 maapi_xpath_eval() evaluating: $DESTINATION_ADD_FAM
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.092 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD_FAM)
+5-Aug-2016::01:24:58.092 maapi_xpath_eval_expr() result: ipv4
+
+5-Aug-2016::01:24:58.093 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv4'))
+5-Aug-2016::01:24:58.093 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.093 maapi_xpath_eval() evaluating: $DESTINATION_ADD
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.093 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD)
+5-Aug-2016::01:24:58.093 maapi_xpath_eval_expr() result: 127.0.0.1
+
+5-Aug-2016::01:24:58.093 maapi_xpath_eval() evaluating: $DESTINATION_PORT
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.093 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PORT)
+5-Aug-2016::01:24:58.093 maapi_xpath_eval_expr() result: 2103
+
+5-Aug-2016::01:24:58.094 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::01:24:58.094 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::01:24:58.094 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::01:24:58.094 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::01:24:58.094 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::01:24:58.094 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::01:24:58.095 maapi_xpath_eval() evaluating: $DESTINATION_ENCODE
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.095 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ENCODE)
+5-Aug-2016::01:24:58.095 maapi_xpath_eval_expr() result: self-describing-gpb
+
+5-Aug-2016::01:24:58.095 maapi_xpath_eval() evaluating: $DESTINATION_PROTO
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.096 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PROTO)
+5-Aug-2016::01:24:58.096 maapi_xpath_eval_expr() result: tcp
+
+5-Aug-2016::01:24:58.096 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv6'))
+5-Aug-2016::01:24:58.096 maapi_xpath_eval_expr() result: false
+
+5-Aug-2016::01:24:58.096 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::01:24:58.096 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.097 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.097 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::01:24:58.097 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.097 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::01:24:58.097 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.098 maapi_xpath_eval() evaluating: $SENSOR_PATH
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.098 maapi_xpath_eval_expr() evaluating: string($SENSOR_PATH)
+5-Aug-2016::01:24:58.098 maapi_xpath_eval_expr() result: dsaffasd
+
+5-Aug-2016::01:24:58.098 maapi_xpath_eval() evaluating: $SUBSCRIPTION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.099 maapi_xpath_eval_expr() evaluating: string($SUBSCRIPTION_ID)
+5-Aug-2016::01:24:58.099 maapi_xpath_eval_expr() result: q
+
+5-Aug-2016::01:24:58.099 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.099 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::01:24:58.099 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.100 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::01:24:58.100 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.100 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.101 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::01:24:58.101 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.101 maapi_xpath_eval() evaluating: $SENSOR_SAMPLE_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.101 maapi_xpath_eval_expr() evaluating: string($SENSOR_SAMPLE_INTERVAL)
+5-Aug-2016::01:24:58.101 maapi_xpath_eval_expr() result: 800
+
+5-Aug-2016::01:24:58.102 maapi_xpath_eval() evaluating: $SENSOR_HEARTBEAT_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.102 maapi_xpath_eval_expr() evaluating: string($SENSOR_HEARTBEAT_INTERVAL)
+5-Aug-2016::01:24:58.102 maapi_xpath_eval_expr() result: 90
+
+5-Aug-2016::01:24:58.102 maapi_xpath_eval_expr() evaluating: string(boolean($SENSOR_SUPRESS_REDUNDANT='true'))
+5-Aug-2016::01:24:58.102 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.103 maapi_xpath_eval() evaluating: $SOURCE_QOS_MARKING
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.103 maapi_xpath_eval_expr() evaluating: string($SOURCE_QOS_MARKING)
+5-Aug-2016::01:24:58.103 maapi_xpath_eval_expr() result: 80
+
+5-Aug-2016::01:24:58.105 maapi_xpath_eval() evaluating: $DEVICE
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.105 maapi_xpath_eval_expr() evaluating: string($DEVICE)
+5-Aug-2016::01:24:58.105 maapi_xpath_eval_expr() result: xr-1
+
+5-Aug-2016::01:24:58.106 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.107 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::01:24:58.107 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.107 maapi_xpath_eval() evaluating: $DESTINATION_ADD_FAM
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.107 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD_FAM)
+5-Aug-2016::01:24:58.107 maapi_xpath_eval_expr() result: ipv4
+
+5-Aug-2016::01:24:58.108 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv4'))
+5-Aug-2016::01:24:58.108 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.108 maapi_xpath_eval() evaluating: $DESTINATION_ADD
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.108 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD)
+5-Aug-2016::01:24:58.108 maapi_xpath_eval_expr() result: 127.0.0.1
+
+5-Aug-2016::01:24:58.109 maapi_xpath_eval() evaluating: $DESTINATION_PORT
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.109 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PORT)
+5-Aug-2016::01:24:58.109 maapi_xpath_eval_expr() result: 2103
+
+5-Aug-2016::01:24:58.109 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::01:24:58.109 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::01:24:58.109 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::01:24:58.109 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::01:24:58.110 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::01:24:58.110 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::01:24:58.110 maapi_xpath_eval() evaluating: $DESTINATION_ENCODE
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.110 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ENCODE)
+5-Aug-2016::01:24:58.110 maapi_xpath_eval_expr() result: self-describing-gpb
+
+5-Aug-2016::01:24:58.111 maapi_xpath_eval() evaluating: $DESTINATION_PROTO
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.111 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PROTO)
+5-Aug-2016::01:24:58.111 maapi_xpath_eval_expr() result: tcp
+
+5-Aug-2016::01:24:58.111 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv6'))
+5-Aug-2016::01:24:58.111 maapi_xpath_eval_expr() result: false
+
+5-Aug-2016::01:24:58.112 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::01:24:58.112 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.112 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.112 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::01:24:58.112 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.113 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::01:24:58.113 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.113 maapi_xpath_eval() evaluating: $SENSOR_PATH
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.113 maapi_xpath_eval_expr() evaluating: string($SENSOR_PATH)
+5-Aug-2016::01:24:58.113 maapi_xpath_eval_expr() result: dsaffasd
+
+5-Aug-2016::01:24:58.114 maapi_xpath_eval() evaluating: $SUBSCRIPTION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.114 maapi_xpath_eval_expr() evaluating: string($SUBSCRIPTION_ID)
+5-Aug-2016::01:24:58.114 maapi_xpath_eval_expr() result: q
+
+5-Aug-2016::01:24:58.114 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.114 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::01:24:58.114 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.115 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::01:24:58.115 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.115 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.115 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::01:24:58.115 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::01:24:58.116 maapi_xpath_eval() evaluating: $SENSOR_SAMPLE_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.116 maapi_xpath_eval_expr() evaluating: string($SENSOR_SAMPLE_INTERVAL)
+5-Aug-2016::01:24:58.116 maapi_xpath_eval_expr() result: 800
+
+5-Aug-2016::01:24:58.116 maapi_xpath_eval() evaluating: $SENSOR_HEARTBEAT_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.117 maapi_xpath_eval_expr() evaluating: string($SENSOR_HEARTBEAT_INTERVAL)
+5-Aug-2016::01:24:58.117 maapi_xpath_eval_expr() result: 90
+
+5-Aug-2016::01:24:58.117 maapi_xpath_eval_expr() evaluating: string(boolean($SENSOR_SUPRESS_REDUNDANT='true'))
+5-Aug-2016::01:24:58.117 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::01:24:58.117 maapi_xpath_eval() evaluating: $SOURCE_QOS_MARKING
+ERROR: Invalid XPath path
+
+5-Aug-2016::01:24:58.118 maapi_xpath_eval_expr() evaluating: string($SOURCE_QOS_MARKING)
+5-Aug-2016::01:24:58.118 maapi_xpath_eval_expr() result: 80
+
+5-Aug-2016::01:48:33.936 Query(5): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::01:48:34.125 Query(5): done, returned 4 results
+5-Aug-2016::01:48:35.853 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven:
+  not(../../ncs:module) or ../../ncs:module[ncs:name='mdt']
+get_next(/ncs:devices/device{xr-0}/module) = {mdt}
+exists("/ncs:devices/device{xr-0}/module{mdt}") = true
+5-Aug-2016::01:48:35.859 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven returns true
+
+5-Aug-2016::01:48:45.128 Query(6): Starting evaluation of:
+  destination-group
+Selection:
+  destination-id
+5-Aug-2016::01:48:45.220 Query(6): done, returned 1 results
+5-Aug-2016::01:48:51.834 Query(7): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::01:48:51.940 Query(7): done, returned 4 results
+5-Aug-2016::02:22:53.635 Query(8): Starting evaluation of:
+  device
+Selection:
+  name
+  address
+  port
+  description
+  authgroup
+  state/oper-state
+  state/admin-state
+  platform/name
+  platform/version
+5-Aug-2016::02:22:53.773 Query(8): done, returned 4 results
+5-Aug-2016::02:22:57.880 Query(9): Starting evaluation of:
+  subtele:subtele
+Selection:
+  subscription-id
+  device-modifications
+  enable
+  source-qos-marking
+  tele_visual
+5-Aug-2016::02:22:57.974 Query(9): done, returned 1 results
+5-Aug-2016::02:23:00.670 Query(10): Starting evaluation of:
+  subtele:subtele
+Selection:
+  subscription-id
+  device-modifications
+  enable
+  source-qos-marking
+  tele_visual
+5-Aug-2016::02:23:00.716 Query(10): done, returned 2 results
+5-Aug-2016::02:23:09.893 Query(11): Starting evaluation of:
+  device
+Selection:
+  name
+5-Aug-2016::02:23:10.019 Query(11): done, returned 4 results
+5-Aug-2016::02:23:35.423 maapi_xpath_eval() evaluating: $DEVICE
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.424 maapi_xpath_eval_expr() evaluating: string($DEVICE)
+5-Aug-2016::02:23:35.424 maapi_xpath_eval_expr() result: xr-0
+
+5-Aug-2016::02:23:35.426 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.426 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::02:23:35.426 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.428 maapi_xpath_eval() evaluating: $DESTINATION_ADD_FAM
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.428 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD_FAM)
+5-Aug-2016::02:23:35.428 maapi_xpath_eval_expr() result: ipv4
+
+5-Aug-2016::02:23:35.428 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv4'))
+5-Aug-2016::02:23:35.429 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.429 maapi_xpath_eval() evaluating: $DESTINATION_ADD
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.429 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD)
+5-Aug-2016::02:23:35.429 maapi_xpath_eval_expr() result: 127.0.0.1
+
+5-Aug-2016::02:23:35.429 maapi_xpath_eval() evaluating: $DESTINATION_PORT
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.430 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PORT)
+5-Aug-2016::02:23:35.430 maapi_xpath_eval_expr() result: 2103
+
+5-Aug-2016::02:23:35.431 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:35.432 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:35.432 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:35.432 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:35.433 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:35.433 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:35.434 maapi_xpath_eval() evaluating: $DESTINATION_ENCODE
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.434 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ENCODE)
+5-Aug-2016::02:23:35.434 maapi_xpath_eval_expr() result: self-describing-gpb
+
+5-Aug-2016::02:23:35.435 maapi_xpath_eval() evaluating: $DESTINATION_PROTO
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.435 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PROTO)
+5-Aug-2016::02:23:35.435 maapi_xpath_eval_expr() result: tcp
+
+5-Aug-2016::02:23:35.435 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv6'))
+5-Aug-2016::02:23:35.435 maapi_xpath_eval_expr() result: false
+
+5-Aug-2016::02:23:35.435 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::02:23:35.435 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.436 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.436 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::02:23:35.436 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.436 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::02:23:35.436 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.437 maapi_xpath_eval() evaluating: $SENSOR_PATH
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.437 maapi_xpath_eval_expr() evaluating: string($SENSOR_PATH)
+5-Aug-2016::02:23:35.437 maapi_xpath_eval_expr() result: vzsbfddsfv
+
+5-Aug-2016::02:23:35.437 maapi_xpath_eval() evaluating: $SUBSCRIPTION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.437 maapi_xpath_eval_expr() evaluating: string($SUBSCRIPTION_ID)
+5-Aug-2016::02:23:35.438 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.438 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.438 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::02:23:35.438 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.439 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::02:23:35.439 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.439 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.439 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::02:23:35.439 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.440 maapi_xpath_eval() evaluating: $SENSOR_SAMPLE_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.440 maapi_xpath_eval_expr() evaluating: string($SENSOR_SAMPLE_INTERVAL)
+5-Aug-2016::02:23:35.440 maapi_xpath_eval_expr() result: 800
+
+5-Aug-2016::02:23:35.440 maapi_xpath_eval() evaluating: $SENSOR_HEARTBEAT_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.440 maapi_xpath_eval_expr() evaluating: string($SENSOR_HEARTBEAT_INTERVAL)
+5-Aug-2016::02:23:35.440 maapi_xpath_eval_expr() result: 80
+
+5-Aug-2016::02:23:35.441 maapi_xpath_eval_expr() evaluating: string(boolean($SENSOR_SUPRESS_REDUNDANT='true'))
+5-Aug-2016::02:23:35.441 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.441 maapi_xpath_eval() evaluating: $SOURCE_QOS_MARKING
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.441 maapi_xpath_eval_expr() evaluating: string($SOURCE_QOS_MARKING)
+5-Aug-2016::02:23:35.441 maapi_xpath_eval_expr() result: 90
+
+5-Aug-2016::02:23:35.446 maapi_xpath_eval() evaluating: $DEVICE
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.446 maapi_xpath_eval_expr() evaluating: string($DEVICE)
+5-Aug-2016::02:23:35.446 maapi_xpath_eval_expr() result: xr-1
+
+5-Aug-2016::02:23:35.447 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.447 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::02:23:35.447 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.447 maapi_xpath_eval() evaluating: $DESTINATION_ADD_FAM
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.448 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD_FAM)
+5-Aug-2016::02:23:35.448 maapi_xpath_eval_expr() result: ipv4
+
+5-Aug-2016::02:23:35.448 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv4'))
+5-Aug-2016::02:23:35.448 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.448 maapi_xpath_eval() evaluating: $DESTINATION_ADD
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.449 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ADD)
+5-Aug-2016::02:23:35.449 maapi_xpath_eval_expr() result: 127.0.0.1
+
+5-Aug-2016::02:23:35.449 maapi_xpath_eval() evaluating: $DESTINATION_PORT
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.449 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PORT)
+5-Aug-2016::02:23:35.449 maapi_xpath_eval_expr() result: 2103
+
+5-Aug-2016::02:23:35.449 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:35.450 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:35.450 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:35.450 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:35.450 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:35.450 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:35.451 maapi_xpath_eval() evaluating: $DESTINATION_ENCODE
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.451 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ENCODE)
+5-Aug-2016::02:23:35.451 maapi_xpath_eval_expr() result: self-describing-gpb
+
+5-Aug-2016::02:23:35.451 maapi_xpath_eval() evaluating: $DESTINATION_PROTO
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.451 maapi_xpath_eval_expr() evaluating: string($DESTINATION_PROTO)
+5-Aug-2016::02:23:35.451 maapi_xpath_eval_expr() result: tcp
+
+5-Aug-2016::02:23:35.452 maapi_xpath_eval_expr() evaluating: string(boolean($DESTINATION_ADD_FAM='ipv6'))
+5-Aug-2016::02:23:35.452 maapi_xpath_eval_expr() result: false
+
+5-Aug-2016::02:23:35.452 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::02:23:35.452 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.452 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.453 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::02:23:35.453 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.453 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::02:23:35.453 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.453 maapi_xpath_eval() evaluating: $SENSOR_PATH
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.454 maapi_xpath_eval_expr() evaluating: string($SENSOR_PATH)
+5-Aug-2016::02:23:35.454 maapi_xpath_eval_expr() result: vzsbfddsfv
+
+5-Aug-2016::02:23:35.454 maapi_xpath_eval() evaluating: $SUBSCRIPTION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.454 maapi_xpath_eval_expr() evaluating: string($SUBSCRIPTION_ID)
+5-Aug-2016::02:23:35.454 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.455 maapi_xpath_eval() evaluating: $DESTINATION_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.455 maapi_xpath_eval_expr() evaluating: string($DESTINATION_ID)
+5-Aug-2016::02:23:35.455 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.455 maapi_xpath_eval_expr() evaluating: string(boolean($ENABLE='true'))
+5-Aug-2016::02:23:35.455 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.456 maapi_xpath_eval() evaluating: $SENSOR_GROUP_ID
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.456 maapi_xpath_eval_expr() evaluating: string($SENSOR_GROUP_ID)
+5-Aug-2016::02:23:35.456 maapi_xpath_eval_expr() result: 1
+
+5-Aug-2016::02:23:35.456 maapi_xpath_eval() evaluating: $SENSOR_SAMPLE_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.457 maapi_xpath_eval_expr() evaluating: string($SENSOR_SAMPLE_INTERVAL)
+5-Aug-2016::02:23:35.457 maapi_xpath_eval_expr() result: 800
+
+5-Aug-2016::02:23:35.457 maapi_xpath_eval() evaluating: $SENSOR_HEARTBEAT_INTERVAL
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.457 maapi_xpath_eval_expr() evaluating: string($SENSOR_HEARTBEAT_INTERVAL)
+5-Aug-2016::02:23:35.457 maapi_xpath_eval_expr() result: 80
+
+5-Aug-2016::02:23:35.458 maapi_xpath_eval_expr() evaluating: string(boolean($SENSOR_SUPRESS_REDUNDANT='true'))
+5-Aug-2016::02:23:35.458 maapi_xpath_eval_expr() result: true
+
+5-Aug-2016::02:23:35.458 maapi_xpath_eval() evaluating: $SOURCE_QOS_MARKING
+ERROR: Invalid XPath path
+
+5-Aug-2016::02:23:35.458 maapi_xpath_eval_expr() evaluating: string($SOURCE_QOS_MARKING)
+5-Aug-2016::02:23:35.458 maapi_xpath_eval_expr() result: 90
+
+5-Aug-2016::02:23:39.475 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:39.475 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:39.480 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:39.480 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:39.495 Evaluating XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:39.495 XPath for: /ncs:devices/device{xr-1}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:39.495 Evaluating XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103}:
+  ../address-family = 'ipv4'
+5-Aug-2016::02:23:39.495 XPath for: /ncs:devices/device{xr-0}/config/telemetry-model-driven/destination-groups/destination-group{1}/destinations/destination{ipv4}/ipv4{127.0.0.1 2103} returns true
+
+5-Aug-2016::02:23:39.501 Evaluating XPath for: /ncs:services/subtele{1}/source-group/device:
+  /ncs:devices/ncs:device/ncs:name
+get_elem("/ncs:services/subtele{1}/source-group/device") = xr-0 xr-1
+exists("/ncs:devices/device{xr-0}") = true
+get_elem("/ncs:services/subtele{1}/source-group/device") = xr-0 xr-1
+5-Aug-2016::02:23:39.504 XPath for: /ncs:services/subtele{1}/source-group/device returns true
+
+5-Aug-2016::02:23:39.504 Evaluating XPath for: /ncs:services/subtele{1}/source-group/device:
+  /ncs:devices/ncs:device/ncs:name
+get_elem("/ncs:services/subtele{1}/source-group/device") = xr-0 xr-1
+exists("/ncs:devices/device{xr-1}") = true
+get_elem("/ncs:services/subtele{1}/source-group/device") = xr-0 xr-1
+5-Aug-2016::02:23:39.504 XPath for: /ncs:services/subtele{1}/source-group/device returns true
