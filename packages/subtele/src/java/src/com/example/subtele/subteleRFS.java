@@ -255,35 +255,35 @@ public class subteleRFS {
     out_kibana.close();
     // ***********
 
-    // create elasticsearch image
-    File elasticsearchDir = new File("./elasticsearch");
-    String elasticsearchID = dockerClient.buildImageCmd(elasticsearchDir)
-        .withNoCache(true)
-        .withTag("elk_elasticsearch")
-        .exec(new BuildImageResultCallback())
-        .awaitImageId();
-    Info info = dockerClient.infoCmd().exec();
-    System.out.println(info.toString());
+    // // create elasticsearch image
+    // File elasticsearchDir = new File("./elasticsearch");
+    // String elasticsearchID = dockerClient.buildImageCmd(elasticsearchDir)
+    //     .withNoCache(true)
+    //     .withTag("elk_elasticsearch")
+    //     .exec(new BuildImageResultCallback())
+    //     .awaitImageId();
+    // Info info = dockerClient.infoCmd().exec();
+    // System.out.println(info.toString());
     
-    // create logstash image
-    File logstashDir = new File("./logstash");
-    String logstashID = dockerClient.buildImageCmd(logstashDir)
-        .withNoCache(true)
-        .withTag("elk_logstash")
-        .exec(new BuildImageResultCallback())
-        .awaitImageId();
-    info = dockerClient.infoCmd().exec();
-    System.out.println(info.toString());
+    // // create logstash image
+    // File logstashDir = new File("./logstash");
+    // String logstashID = dockerClient.buildImageCmd(logstashDir)
+    //     .withNoCache(true)
+    //     .withTag("elk_logstash")
+    //     .exec(new BuildImageResultCallback())
+    //     .awaitImageId();
+    // info = dockerClient.infoCmd().exec();
+    // System.out.println(info.toString());
     
-    // create kibana image
-    File kibanaDir = new File("./kibana");
-    String KibanaID = dockerClient.buildImageCmd(kibanaDir)
-        .withNoCache(true)
-        .withTag("elk_kibana")
-        .exec(new BuildImageResultCallback())
-        .awaitImageId();
-    info = dockerClient.infoCmd().exec();
-    System.out.println(info.toString());
+    // // create kibana image
+    // File kibanaDir = new File("./kibana");
+    // String KibanaID = dockerClient.buildImageCmd(kibanaDir)
+    //     .withNoCache(true)
+    //     .withTag("elk_kibana")
+    //     .exec(new BuildImageResultCallback())
+    //     .awaitImageId();
+    // info = dockerClient.infoCmd().exec();
+    // System.out.println(info.toString());
 
     // list all images
     List<Image> dockerList =  dockerClient.listImagesCmd().exec();
