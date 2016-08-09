@@ -32,6 +32,7 @@ import com.github.dockerjava.api.command.CreateContainerResponse;
 import com.github.dockerjava.api.command.DockerCmdExecFactory;
 import com.github.dockerjava.api.exception.DockerException;
 import com.github.dockerjava.api.model.Bind;
+import com.github.dockerjava.api.model.Container;
 import com.github.dockerjava.api.model.ExposedPort;
 import com.github.dockerjava.api.model.Image;
 import com.github.dockerjava.api.model.Info;
@@ -253,39 +254,66 @@ public class subteleRFS {
     out_kibana.close();
     // ***********
 
-    // // create elasticsearch image
-    // File elasticsearchDir = new File("./elasticsearch");
-    // String elasticsearchID = dockerClient.buildImageCmd(elasticsearchDir)
-    //     .withNoCache(true)
-    //     .withTag("elk_elasticsearch")
-    //     .exec(new BuildImageResultCallback())
-    //     .awaitImageId();
-    // Info info = dockerClient.infoCmd().exec();
-    // System.out.println(info.toString());
-    
-    // // create logstash image
-    // File logstashDir = new File("./logstash");
-    // String logstashID = dockerClient.buildImageCmd(logstashDir)
-    //     .withNoCache(true)
-    //     .withTag("elk_logstash")
-    //     .exec(new BuildImageResultCallback())
-    //     .awaitImageId();
-    // info = dockerClient.infoCmd().exec();
-    // System.out.println(info.toString());
-    
-    // // create kibana image
-    // File kibanaDir = new File("./kibana");
-    // String KibanaID = dockerClient.buildImageCmd(kibanaDir)
-    //     .withNoCache(true)
-    //     .withTag("elk_kibana")
-    //     .exec(new BuildImageResultCallback())
-    //     .awaitImageId();
-    // info = dockerClient.infoCmd().exec();
-    // System.out.println(info.toString());
-
     // list all images
-    List<Image> dockerList =  dockerClient.listImagesCmd().exec();
-    System.out.println("Search returned" + dockerList.toString());
+		List<Image> dockerList =  dockerClient.listImagesCmd().exec();
+		System.out.println("Search returned" + dockerList.toString());
+
+    // create elasticsearch image
+    if(dockerList.toString().contains("elk_elasticsearch") == false){
+			File elasticsearchDir = new File("./elasticsearch");
+			String elasticsearchID = dockerClient.buildImageCmd(elasticsearchDir)
+					.withNoCache(true)
+					.withTag("elk_elasticsearch")
+					.exec(new BuildImageResultCallback())
+					.awaitImageId();
+			Info info = dockerClient.infoCmd().exec();
+			System.out.println(info.toString());
+		}
+
+    // create logstash image
+    if(dockerList.toString().contains("elk_logstash") == false){
+			File logstashDir = new File("./logstash");
+			String logstashID = dockerClient.buildImageCmd(logstashDir)
+					.withNoCache(true)
+					.withTag("elk_logstash")
+					.exec(new BuildImageResultCallback())
+					.awaitImageId();
+			Info info = dockerClient.infoCmd().exec();
+			System.out.println(info.toString());
+		}
+
+    // create kibana image
+    if(dockerList.toString().contains("elk_kibana") == false){
+			File kibanaDir = new File("./kibana");
+			String KibanaID = dockerClient.buildImageCmd(kibanaDir)
+					.withNoCache(true)
+					.withTag("elk_kibana")
+					.exec(new BuildImageResultCallback())
+					.awaitImageId();
+			Info info = dockerClient.infoCmd().exec();
+			System.out.println(info.toString());
+		}
+
+    // list all containers
+    List<Container> containerList =  dockerClient.listContainersCmd().exec();
+    System.out.println("Search returned" + containerList.toString());
+
+    if(containerList.toString().contains("stack_elk_elasticsearch")) {
+      // stop container stack_elk_elasticsearch
+      dockerClient.stopContainerCmd("stack_elk_elasticsearch").exec();
+      // remove container stack_elk_elasticsearch
+      dockerClient.removeContainerCmd("stack_elk_elasticsearch").exec();
+    }
+
+    if(containerList.toString().contains("stack_elk_kibana")) {
+      dockerClient.stopContainerCmd("stack_elk_kibana").exec();
+      dockerClient.removeContainerCmd("stack_elk_kibana").exec();
+    }
+
+    if(containerList.toString().contains("stack_elk_logstash")) {
+      dockerClient.stopContainerCmd("stack_elk_logstash").exec();
+      dockerClient.removeContainerCmd("stack_elk_logstash").exec();
+    }
 
     //create elasticsearch container
     ExposedPort tcp9200 = ExposedPort.tcp(9200);
